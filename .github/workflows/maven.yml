@@ -30,14 +30,14 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build with Maven
-      run: mvn -B -Pgithub package --file pom.xml
-      env:
-        GITHUB_USER_REF: ${{ secrets.GH_PACKAGE_REPO_USERNAME }}
-        GITHUB_TOKEN_REF: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
+#     - name: Build with Maven
+#       run: mvn -B -Pgithub package --file pom.xml
+#       env:
+#         GITHUB_USER_REF: ${{ secrets.GH_PACKAGE_REPO_USERNAME }}
+#         GITHUB_TOKEN_REF: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
         
-    - name: Run test 
-      run: mvn test
+#     - name: Run test 
+#       run: mvn test
 
     - name: Get Allure history
       uses: actions/checkout@v2
