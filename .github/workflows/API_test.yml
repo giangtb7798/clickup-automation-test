@@ -9,10 +9,10 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  workflow_dispatch:
+    inputs:
+      api-group:
+        description: "API_GROUP"
 jobs:
   build:
 
