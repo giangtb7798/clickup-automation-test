@@ -44,7 +44,7 @@
         <aspectj.version>1.9.7</aspectj.version>
         <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
         <defaultSuiteFiles>
-            api-testng.xml,
+            api-test-suite.xml,
         </defaultSuiteFiles>
         <suiteFile>${defaultSuiteFiles}</suiteFile>
     </properties>

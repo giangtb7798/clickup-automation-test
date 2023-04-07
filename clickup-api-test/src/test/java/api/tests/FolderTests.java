@@ -12,7 +12,7 @@ import java.net.HttpURLConnection;
 @Epic("Click up")
 @Feature("api-folder")
 public class FolderTests extends BaseTest {
-    @Test(description = "verify that delete folder successfully")
+    @Test(description = "verify that delete folder successfully", groups={"folder"})
     public void delete_folder_successfully() throws Exception {
         String name = "study";
         FolderInput folderInput = new FolderInput(name);
