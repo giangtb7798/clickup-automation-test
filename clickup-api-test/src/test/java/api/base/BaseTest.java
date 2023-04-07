@@ -17,21 +17,21 @@ public class BaseTest {
 
     protected ListSteps listSteps = new ListSteps();
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception {
         HttpRequests.initReq();
         HttpRequests.setAuthorization("pk_55578828_L0EICZVTIO92ZOPYY9MA7UBI6WZ20JU7");
         HttpRequests.setAllUrl("https://api.clickup.com/api/v2");
     }
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void setupSuite() throws Exception {
         HttpRequests.initReq();
     }
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void tearDownSuite() throws Exception {
         RestAssured.reset();
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() throws Exception {
         RestAssured.reset();
     }
