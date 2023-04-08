@@ -1,7 +1,7 @@
 package base;
 
-import httprequest.HttpRequests;
 import org.example.config.WebAppDriverManager;
+import org.example.httprequest.HttpRequests;
 import org.testng.annotations.*;
 
 import java.io.IOException;

@@ -1,11 +1,10 @@
 package tests;
 
 import base.AbstractWebTest;
-import microservices.models.spacemodels.SpaceInput;
-import microservices.models.spacemodels.SpaceResponse;
-import microservices.models.spacemodels.SpacesResponseList;
-import microservices.steps.SpaceSteps;
-
+import org.example.microservices.models.spacemodels.SpaceInput;
+import org.example.microservices.models.spacemodels.SpaceResponse;
+import org.example.microservices.models.spacemodels.SpacesResponseList;
+import org.example.microservices.steps.SpaceSteps;
 import org.example.models.SpaceModel;
 import org.example.pagesobject.LandingPage;
 import org.example.pagesobject.LoginPage;

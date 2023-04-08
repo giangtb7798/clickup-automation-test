@@ -2,9 +2,10 @@ package org.example.pagesobject;
 
 
 import io.qameta.allure.Step;
-import microservices.models.spacemodels.SpaceResponse;
+
 
 import org.example.core.WebApi;
+import org.example.microservices.models.spacemodels.SpaceResponse;
 import org.example.models.SpaceModel;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

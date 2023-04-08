@@ -1,9 +1,9 @@
 package tests;
 
 import base.AbstractWebTest;
-import microservices.models.listmodels.FolderInput;
-import microservices.models.listmodels.FolderResponse;
-import microservices.steps.ListSteps;
+import org.example.microservices.models.foldermodels.FolderResponse;
+import org.example.microservices.models.listmodels.FolderInput;
+import org.example.microservices.steps.ListSteps;
 import org.example.models.TaskModel;
 import org.example.pagesobject.LoginPage;
 import org.example.pagesobject.NavigationPage;

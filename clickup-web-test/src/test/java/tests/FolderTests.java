@@ -1,12 +1,12 @@
 package tests;
 
 import base.AbstractWebTest;
-import microservices.models.listmodels.FolderResponse;
-import microservices.models.listmodels.FolderResponseList;
-import microservices.models.spacemodels.SpaceInput;
-import microservices.models.spacemodels.SpaceResponse;
-import microservices.steps.ListSteps;
-import microservices.steps.SpaceSteps;
+import org.example.microservices.models.listmodels.FolderResponse;
+import org.example.microservices.models.listmodels.FolderResponseList;
+import org.example.microservices.models.spacemodels.SpaceInput;
+import org.example.microservices.models.spacemodels.SpaceResponse;
+import org.example.microservices.steps.ListSteps;
+import org.example.microservices.steps.SpaceSteps;
 import org.example.pagesobject.LoginPage;
 import org.example.pagesobject.NavigationPage;
 import org.testng.annotations.AfterMethod;
