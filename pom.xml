@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>clickup-api-test</module>
+        <module>clickup-web-test</module>
     </modules>
 
     <properties>
