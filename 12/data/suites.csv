@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Sun Apr 09 13:34:33 GMT 2023","Sun Apr 09 13:34:33 GMT 2023","2","Setel Regression Suite","Setel Admin test on chrome","tests.LoginTest","tests.LoginTest","beforeMethod","beforeMethod",""
+"skipped","Sun Apr 09 13:34:33 GMT 2023","Sun Apr 09 13:34:33 GMT 2023","3","Setel Regression Suite","Setel Admin test on chrome","tests.LoginTest","tests.LoginTest","login_to_click_up_successfully","verify login successfully",""
+"broken","Sun Apr 09 13:34:33 GMT 2023","Sun Apr 09 13:34:33 GMT 2023","0","Setel Regression Suite","Setel Admin test on chrome","tests.LoginTest","tests.LoginTest","afterMethod","afterMethod",""
