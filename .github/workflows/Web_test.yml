@@ -37,7 +37,7 @@ jobs:
         GITHUB_TOKEN_REF: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
         
     - name: Run test
-      run: mvn -pl test "-DclickUpWeb.group=${{github.event.inputs.web-group}}"
+      run: mvn test "-DclickUpWeb.group=${{github.event.inputs.web-group}}"
 
     - name: Get Allure history
       uses: actions/checkout@v2
