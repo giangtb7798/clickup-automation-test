@@ -26,7 +26,7 @@ public class FolderTests extends AbstractWebTest {
     ListSteps listSteps = new ListSteps();
     String name = "company";
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login() throws IOException {
         String email = "ntruonggiangtb98@gmail.com";
         String password = "07071998Gg";
@@ -114,7 +114,7 @@ public class FolderTests extends AbstractWebTest {
                 .when_deleteList(folderResponse.get(folderResponse.size() - 1).getId())
                 .validateResponse(HttpURLConnection.HTTP_OK);
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void cleanData() throws IOException {
 
         //clean data

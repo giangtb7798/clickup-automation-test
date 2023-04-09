@@ -26,7 +26,7 @@ public class SpaceTests extends AbstractWebTest {
     SpaceSteps spaceSteps = new SpaceSteps();
     String name = "company";
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login() throws IOException {
         String email = "ntruonggiangtb98@gmail.com";
         String password = "07071998Gg";
@@ -179,7 +179,7 @@ public class SpaceTests extends AbstractWebTest {
         navigationPage
                 .verifySpaceListDisplayedCorrectly(spacesResponseLists.getSpaces(), spaceModels);
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void cleanData() throws IOException {
 
         //clean data

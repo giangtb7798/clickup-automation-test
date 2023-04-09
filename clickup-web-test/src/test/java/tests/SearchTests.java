@@ -17,7 +17,7 @@ import static org.example.constants.ClickUpMessage.*;
 
 
 public class SearchTests extends AbstractWebTest {
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void login() throws IOException {
         String email = "ntruonggiangtb98@gmail.com";
         String password = "07071998Gg";

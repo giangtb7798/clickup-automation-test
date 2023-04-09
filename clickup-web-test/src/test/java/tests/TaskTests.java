@@ -17,7 +17,7 @@ import java.util.List;
 
 public class TaskTests extends AbstractWebTest {
     ListSteps listSteps = new ListSteps();
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void logIn() throws Exception {
         String email = "ntruonggiangtb98@gmail.com";
         String password = "07071998Gg";
