@@ -1,1 +1,1 @@
-{"1a04ee3df14ca1d0a631c384f53f37f3":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2},"items":[{"uid":"de005d1439cac46d","reportUrl":"https://giangtb7798.github.io/clickup-automation-test/7//#testresult/de005d1439cac46d","status":"passed","time":{"start":1680840391243,"stop":1680840394166,"duration":2923}},{"uid":"81495a96f645d8e0","reportUrl":"https://giangtb7798.github.io/clickup-automation-test/6//#testresult/81495a96f645d8e0","status":"passed","time":{"start":1680839492511,"stop":1680839497375,"duration":4864}}]}}
+{}
