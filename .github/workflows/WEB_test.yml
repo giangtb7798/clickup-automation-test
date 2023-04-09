@@ -35,11 +35,7 @@ jobs:
       env:
         GITHUB_USER_REF: ${{ secrets.GH_PACKAGE_REPO_USERNAME }}
         GITHUB_TOKEN_REF: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
-    
-    - name:  Install Google Chrome # Using shell script to install Google Chrome
-      run:   |
-              chmod +x ./scripts/InstallChrome.sh
-                          ./scripts/InstallChrome.sh     
+     
     - name: Run test
       run: mvn test "-DclickUpWeb.group=${{github.event.inputs.web-group}}"
 
