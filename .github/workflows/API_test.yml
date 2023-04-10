@@ -44,8 +44,8 @@ jobs:
       if: always()
       continue-on-error: true
       with:
-        ref: gh-api-pages
-        path: gh-api-pages
+        ref: gh-pages
+        path: gh-pages
 
     - name: Allure Report action from marketplace
       uses: simple-elf/allure-report-action@master
@@ -53,7 +53,7 @@ jobs:
       #id: allure-report
       with:
         allure_results: clickup-api-test/allure-results
-        #gh_pages: gh-api-pages
+        #gh_pages: gh-pages
         #allure_report: allure-report
         allure_history: allure-history
         keep_reports: 20
@@ -63,5 +63,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v2
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PUBLISH_BRANCH: gh-api-pages
+        PUBLISH_BRANCH: gh-pages
         PUBLISH_DIR: allure-history
