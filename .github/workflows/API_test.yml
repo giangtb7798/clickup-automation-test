@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       api-group:
-        description: "API_GROUP"
+        description: API_GROUP + ${{ github.actor }}
 jobs:
   build:
 
