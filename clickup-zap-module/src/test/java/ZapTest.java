@@ -22,6 +22,7 @@ public class ZapTest {
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.setAcceptInsecureCerts(true);
+        chromeOptions.addArguments(new String[]{"headless"});
         chromeOptions.setProxy(proxy);
         WebDriver driver = new ChromeDriver(chromeOptions);
 
