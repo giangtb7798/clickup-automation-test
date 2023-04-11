@@ -7,11 +7,18 @@ import org.testng.annotations.Test;
 import org.zaproxy.clientapi.core.ClientApi;
 import org.zaproxy.clientapi.core.ClientApiException;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 import static java.lang.Thread.sleep;
 
 public class ZapTest {
     @Test
-    public void zap() throws ClientApiException, InterruptedException {
+    public void zap() throws ClientApiException, InterruptedException, IOException {
 
         ClientApi api;
         Proxy proxy = new Proxy();
@@ -36,17 +43,23 @@ public class ZapTest {
         driver.findElement(By.name
         ("submit")).click();*/
         sleep(5000);
-        if(api != null) {
+
+/*        if(api != null) {
             String title = "ZAP Scanning Report";
             String template = "traditional-html";
             String description = "this this zap test report";
             String reportFileName = "2023-01-28-ZAP-Report-.html";
             String targetFolder = System.getProperty("user.dir");
-            System.out.println(targetFolder);
             api.reports.generate(title, template, null, description, null, null, null, null,
                     null, reportFileName, null, targetFolder, null);
-        }
-
+        }*/
+        Path path = Paths.get("security-reports");
+        Files.createDirectories(path);
+        FileWriter fw = new FileWriter(new File("security-reports/" + "sth" + "_report.xml"));
+        fw.write(new String(api.core.xmlreport()));
+        fw = new FileWriter(new File("security-reports/" + "sth" + "_report.xml"));
+        fw.write(new String(api.core.htmlreport()));
+        fw.close();
         //Quit the browser
         driver.quit();
     }
