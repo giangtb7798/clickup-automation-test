@@ -60,6 +60,7 @@ public class ZapTest {
         fw = new FileWriter(new File("security-reports/" + "index.html"));
         fw.write(new String(api.core.htmlreport()));
         fw.close();
+
         //Quit the browser
         driver.quit();
     }
