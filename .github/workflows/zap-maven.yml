@@ -52,4 +52,4 @@ jobs:
       env:
         PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUBLISH_BRANCH: gh-security-pages
-        PUBLISH_DIR: security-reports
+        PUBLISH_DIR: clickup-zap-module/security-reports
