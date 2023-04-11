@@ -30,7 +30,7 @@ jobs:
     - name: Download zap
       run: docker pull owasp/zap2docker-stable
     - name: start zap
-      run: docker run -u zap -p 8080:8080 -i owasp/zap2docker-stable zap.sh -daemon -host 0.0.0.0 -port 8080
+      run: docker run -u zap -p 8080:8080 -i owasp/zap2docker-stable zap.sh -daemon -host 0.0.0.0 -port 8080 -config api.disablekey=true -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
       
     - name: Build with Maven
       run: mvn -B package --file pom.xml
