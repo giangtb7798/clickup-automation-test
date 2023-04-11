@@ -12,6 +12,7 @@ import static java.lang.Thread.sleep;
 public class ZapTest {
     @Test
     public void zap() throws ClientApiException, InterruptedException {
+
         ClientApi api;
         Proxy proxy = new Proxy();
         proxy.setHttpProxy("localhost:8080");
