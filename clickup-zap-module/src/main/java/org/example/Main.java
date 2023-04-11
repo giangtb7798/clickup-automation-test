@@ -20,6 +20,7 @@ public class Main {
         //Setup the web browser
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments(new String[]{"headless"});
         chromeOptions.setAcceptInsecureCerts(true);
         chromeOptions.setProxy(proxy);
         WebDriver driver = new ChromeDriver(chromeOptions);
