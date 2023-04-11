@@ -11,6 +11,7 @@
     <modules>
         <module>clickup-api-test</module>
         <module>clickup-web-test</module>
+        <module>clickup-zap-module</module>
     </modules>
 
     <properties>
