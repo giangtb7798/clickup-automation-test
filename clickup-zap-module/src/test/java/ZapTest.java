@@ -57,7 +57,7 @@ public class ZapTest {
         Files.createDirectories(path);
         FileWriter fw = new FileWriter(new File("security-reports/" + "sth" + "_report.xml"));
         fw.write(new String(api.core.xmlreport()));
-        fw = new FileWriter(new File("security-reports/" + "sth" + "_report.html"));
+        fw = new FileWriter(new File("security-reports/" + "index.html"));
         fw.write(new String(api.core.htmlreport()));
         fw.close();
         //Quit the browser
