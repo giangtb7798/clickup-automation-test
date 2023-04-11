@@ -36,13 +36,13 @@ public class ZapTest {
         driver.findElement(By.name
         ("submit")).click();*/
         sleep(5000);
-        System.out.println("work here");
         if(api != null) {
             String title = "ZAP Scanning Report";
             String template = "traditional-html";
             String description = "this this zap test report";
             String reportFileName = "2023-01-28-ZAP-Report-.html";
             String targetFolder = System.getProperty("user.dir");
+            System.out.println("work here");
             api.reports.generate(title, template, null, description, null, null, null, null,
                     null, reportFileName, null, targetFolder, null);
         }
