@@ -44,14 +44,7 @@ jobs:
         GITHUB_TOKEN_REF: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
     - name: run with maven
       run: mvn -pl clickup-zap-module test
-        
-    - name: Get security report
-      uses: actions/checkout@v2
-      if: always()
-      continue-on-error: true
-      with:
-        ref: gh-security-pages
-        path: gh-security-pages
+      
 
     - name: Deploy report to Github Pages
       if: always()
