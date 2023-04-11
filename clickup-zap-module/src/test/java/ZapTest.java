@@ -26,17 +26,17 @@ public class ZapTest {
         chromeOptions.setProxy(proxy);
         WebDriver driver = new ChromeDriver(chromeOptions);
 
-        System.out.println("start here");
         api = new ClientApi("localhost", 8080);
         api.automation.endDelayJob();
-        System.out.println("work here");
         //Open the URL
         driver.get("https://www.facebook.com/");
 /*        //Login
         driver.findElement(By.id("username")).sendKeys("admin");
         driver.findElement(By.id("password")).sendKeys("password");
-        driver.findElement(By.name("submit")).click();*/
+        driver.findElement(By.name
+        ("submit")).click();*/
         sleep(5000);
+        System.out.println("work here");
         if(api != null) {
             String title = "ZAP Scanning Report";
             String template = "traditional-html";
