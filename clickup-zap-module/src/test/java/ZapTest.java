@@ -42,7 +42,7 @@ public class ZapTest {
             String description = "this this zap test report";
             String reportFileName = "2023-01-28-ZAP-Report-.html";
             String targetFolder = System.getProperty("user.dir");
-            System.out.println("work here");
+            System.out.println(targetFolder);
             api.reports.generate(title, template, null, description, null, null, null, null,
                     null, reportFileName, null, targetFolder, null);
         }
