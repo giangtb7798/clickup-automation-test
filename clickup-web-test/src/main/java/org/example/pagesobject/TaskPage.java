@@ -3,9 +3,12 @@ package org.example.pagesobject;
 
 import io.qameta.allure.Step;
 
+import org.example.config.WebAppDriverManager;
 import org.example.models.TaskModel;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.example.core.WebApi;
 
@@ -23,7 +26,7 @@ public class TaskPage extends WebApi {
     private WebElement saveTask;
     @FindBy(xpath = "//span[contains(text(),'taskName')]//parent::div//div[@cutooltip=\"Create subtask\"]")
     private WebElement subTaskBtn;
-    @FindBy(xpath = "//input[@placeholder=\"New subtask\"]")
+    @FindBy(xpath = "//input[@data-test=\"task-row-new__input\"]")
     private WebElement fieldSubTaskName;
     @FindBy(xpath = "//cu-task-list-header-field[@sorttitle=\"Sort by Task Name\"]")
     private WebElement sortDropdown;
@@ -37,6 +40,8 @@ public class TaskPage extends WebApi {
     private WebElement board;
     @FindBy(xpath = "//input[@placeholder=\"Search tasks...\"]")
     private WebElement fieldSearch;
+    @FindBy(xpath = "//div[@data-test='toast__buttons']")
+    private WebElement toastMessage;
 
     @FindBy(xpath = "//cu-task-row//span[@class=\"cu-task-row-main__link-text-inner\"]")
     private List<WebElement> txtTaskNameList;
@@ -80,6 +85,7 @@ public class TaskPage extends WebApi {
     }
     @Step("enter subtask name")
     public TaskPage enterSubtaskName(String subTask){
+        waitForElementVisible(fieldSubTaskName);
         sendKeyToElement(fieldSubTaskName, subTask);
         return this;
     }

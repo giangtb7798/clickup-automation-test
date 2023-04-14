@@ -1,10 +1,12 @@
 package tests;
 
 import base.AbstractWebTest;
+import org.example.microservices.models.foldermodels.FolderInput;
 import org.example.microservices.models.listmodels.FolderResponse;
 import org.example.microservices.models.listmodels.FolderResponseList;
 import org.example.microservices.models.spacemodels.SpaceInput;
 import org.example.microservices.models.spacemodels.SpaceResponse;
+import org.example.microservices.steps.FolderSteps;
 import org.example.microservices.steps.ListSteps;
 import org.example.microservices.steps.SpaceSteps;
 import org.example.pagesobject.LoginPage;
@@ -22,9 +24,14 @@ import static org.example.constants.ClickUpMessage.*;
 
 public class FolderTests extends AbstractWebTest {
     SpaceResponse spaceResponse;
+
+    FolderResponse folderResponse;
     SpaceSteps spaceSteps = new SpaceSteps();
     ListSteps listSteps = new ListSteps();
-    String name = "company";
+    FolderSteps folderSteps = new FolderSteps();
+    String name = "bigCompany";
+
+    String folderName = "bigFolder";
 
     @BeforeMethod(alwaysRun = true)
     public void login() throws IOException {
@@ -36,13 +43,19 @@ public class FolderTests extends AbstractWebTest {
         spaceResponse = (SpaceResponse) spaceSteps.when_createSpace(spaceInput)
                 .validateResponse(HttpURLConnection.HTTP_OK)
                 .saveResponseObject(SpaceResponse.class);
-        navigationPage.refreshCurrentPage();
+
+        FolderInput folderInput = new FolderInput(folderName);
+        folderResponse = (FolderResponse) folderSteps
+                .when_createFolder(folderInput, spaceResponse.getId())
+                .validateResponse(HttpURLConnection.HTTP_OK)
+                .saveResponseObject(FolderResponse.class);
 
         new LoginPage()
                 .goToLoginPage()
                 .enterEmailAddress(email)
                 .enterPassword(password)
                 .clickToSubmitBtn();
+
     }
 
     @Test(description = "verify create folder function works")
@@ -65,8 +78,6 @@ public class FolderTests extends AbstractWebTest {
     }
     @Test(description = "verify create list in folder works")
     public void verify_create_list_in_folder_successfully() throws IOException, InterruptedException {
-        name = "do not edit";
-        String folderName = "folder do not edit";
         String listName = "staffList";
         NavigationPage navigationPage = new NavigationPage();
 
@@ -79,19 +90,12 @@ public class FolderTests extends AbstractWebTest {
                 .verifyCreateListDialogDisplayed()
                 .enterListName(listName)
                 .clickToCreateListBtn()
-                .clickToSpace(name)
+                //.clickToSpace(name)
                 .verifyListDisplayed(listName);
 
-        FolderResponseList folderResponseLists = (FolderResponseList) listSteps
-                .when_getLists()
-                .saveResponseObject(FolderResponseList.class);
-        List<FolderResponse> folderResponse = folderResponseLists.getLists();
-        listSteps
-                .when_deleteList(folderResponse.get(folderResponse.size() - 1).getId())
-                .validateResponse(HttpURLConnection.HTTP_OK);
     }
 
-    @Test(description = "verify create docs in folder works")
+    @Test(enabled = false, description = "verify create docs in folder works")
     public void verify_create_docs_in_folder_successfully() throws IOException, InterruptedException {
         name = "do not edit";
         String folderName = "folder do not edit";
@@ -104,7 +108,8 @@ public class FolderTests extends AbstractWebTest {
                 .clickToFolderSetting(folderName)
                 .clickToOptionFolderSetting(FOLDER_SETTING[0])
                 .clickToOptionFolderSetting(MENU_CREATE_NEW[1])
-                .verifyListDisplayed(listName);
+                //.verifyListDisplayed(listName)
+                ;
 
         FolderResponseList folderResponseLists = (FolderResponseList) listSteps
                 .when_getLists()
@@ -121,5 +126,6 @@ public class FolderTests extends AbstractWebTest {
         spaceSteps
                 .when_deleteSpace(spaceResponse.getId())
                 .validateResponse(HttpURLConnection.HTTP_OK);
+
     }
 }

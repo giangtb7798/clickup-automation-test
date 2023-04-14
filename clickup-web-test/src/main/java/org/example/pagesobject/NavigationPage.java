@@ -67,7 +67,7 @@ public class NavigationPage extends WebApi {
     private String spaceName = "//a[contains(text(),'%s')]";
     private String warningMessage = "//div[contains(text(),'%s')]";
     private String txtFolderName = "//div[contains(text(),'%s')]";
-    private String sideBar = "//span[contains(text(),'%s')]";
+    private String sideBar = "//button[contains(text(),'%s')]";
     private String spaceNameInSideBar = "(//div[contains(text(),'%s')])[last()]";
     private String folder = "//a[contains(text(),'%s')]";
     private String txtList = "//button//cu-editable[contains(text(),'%s')]";
@@ -269,7 +269,9 @@ public class NavigationPage extends WebApi {
 
     @Step("verify space name displayed")
     public NavigationPage verifySpaceNameDisplayed(String nameSpace){
-        Assert.assertTrue(isControlEnabled(spaceName, nameSpace));
+        String locator = String.format(spaceName, nameSpace);
+        waitForElementVisible(locator);
+        Assert.assertTrue(isControlEnabled(locator));
         return this;
     }
     @Step("verify space name Undisplayed")

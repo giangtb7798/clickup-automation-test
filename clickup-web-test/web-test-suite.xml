@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Setel Regression Suite" configfailurepolicy="continue" verbose="1" parallel="classes" thread-count="2">
+<suite name="Setel Regression Suite" configfailurepolicy="continue" verbose="1" parallel="classes" thread-count="1">
     <test name="Setel Admin test on chrome">
         <method-selectors>
             <method-selector>
@@ -31,8 +31,8 @@
             </method-selector>
         </method-selectors>
         <classes>
-            <class name="tests.LoginTest"></class>
             <class name="tests.FolderTests"></class>
+            <class name="tests.LoginTest"></class>
             <class name="tests.SearchTests"></class>
             <class name="tests.SpaceTests"></class>
             <class name="tests.TaskTests"></class>
