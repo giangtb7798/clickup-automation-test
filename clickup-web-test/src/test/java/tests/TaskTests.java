@@ -25,17 +25,21 @@ public class TaskTests extends AbstractWebTest {
         String password = "07071998Gg";
         String listName = "myNameList";
 
+        FolderInput folderInput = new FolderInput(listName);
+        NavigationPage navigationPage = new NavigationPage();
+
         new LoginPage()
                 .goToLoginPage()
                 .enterEmailAddress(email)
                 .enterPassword(password)
                 .clickToSubmitBtn();
 
-        FolderInput folderInput = new FolderInput(listName);
         folderResponse = (FolderResponse) listSteps
                 .when_createListInSpace(folderInput)
                 .validateResponse(HttpURLConnection.HTTP_OK)
                 .saveResponseObject(FolderResponse.class);
+        navigationPage.refreshCurrentPage();
+
     }
 
     @Test(description = "create task")
