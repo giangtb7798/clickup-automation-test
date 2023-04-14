@@ -16,9 +16,9 @@ public class SearchPage extends WebApi {
     @FindBy(xpath = "//input[@placeholder=\"Search or run a command…\"]")
     private WebElement fieldSearch;
 
-    @FindBy(xpath = "//div[contains(@class,\"Option-contents-u3POB\")]/div[contains(@class,'OptionTitle')]/span/span[last()]")
+    @FindBy(xpath = "//div[contains(@class,\"Option-contents\")]/div[contains(@class,'OptionTitle')]/span/span[last()]")
     private List<WebElement> txtTitle;
-    @FindBy(xpath = "//div[contains(@class,\"Option-contents-u3POB\")]/div[contains(@class,'OptionSubtitle')]/span[1]")
+    @FindBy(xpath = "//div[contains(@class,\"Option-contents\")]/div[contains(@class,'OptionSubtitle')]/span[1]")
     private List<WebElement> txtSubtitle;
     @FindBy(xpath = "//h2[contains(text(),'No results found')]")
     private WebElement notFoundMessage;

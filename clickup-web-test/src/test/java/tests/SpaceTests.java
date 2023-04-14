@@ -57,7 +57,7 @@ public class SpaceTests extends AbstractWebTest {
     }
     @Test(description = "verify that create new space successfully")
     public void verify_create_new_space_successfully() throws IOException {
-        String spaceName = "company";
+        String spaceName = "firm";
         NavigationPage navigationPage = new NavigationPage();
         LandingPage landingPage = new LandingPage();
 
@@ -77,6 +77,7 @@ public class SpaceTests extends AbstractWebTest {
                 .validateResponse(HttpURLConnection.HTTP_OK)
                 .saveResponseObject(SpacesResponseList.class);
         List<SpaceResponse> spaceResponses = spacesResponseLists.getSpaces();
+
         spaceSteps
                 .when_deleteSpace(spaceResponses.get(spaceResponses.size() - 1).getId())
                 .validateResponse(HttpURLConnection.HTTP_OK);

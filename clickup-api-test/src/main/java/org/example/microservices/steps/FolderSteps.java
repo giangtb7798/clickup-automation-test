@@ -16,6 +16,11 @@ public class FolderSteps extends BaseApi {
         sendPost(CREATE_FOLDER_URI, folderInput, "space_id", SPACE_ID);
         return this;
     }
+    @Step("create Folder in space")
+    public FolderSteps when_createFolder(FolderInput folderInput, String spaceID) throws IOException {
+        sendPost(CREATE_FOLDER_URI, folderInput, "space_id", spaceID);
+        return this;
+    }
     @Step("update Folder by folder id")
     public FolderSteps when_updateFolder(FolderInput folderInput, String folderId) throws IOException {
         sendPut(UPDATE_FOLDER_URI, folderInput, "folder_id", folderId);

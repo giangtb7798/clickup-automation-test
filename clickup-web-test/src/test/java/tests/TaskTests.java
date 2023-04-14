@@ -8,6 +8,7 @@ import org.example.models.TaskModel;
 import org.example.pagesobject.LoginPage;
 import org.example.pagesobject.NavigationPage;
 import org.example.pagesobject.TaskPage;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,27 +18,30 @@ import java.util.List;
 
 public class TaskTests extends AbstractWebTest {
     ListSteps listSteps = new ListSteps();
+    FolderResponse folderResponse;
     @BeforeMethod(alwaysRun = true)
     public void logIn() throws Exception {
         String email = "ntruonggiangtb98@gmail.com";
         String password = "07071998Gg";
+        String listName = "myNameList";
+
         new LoginPage()
                 .goToLoginPage()
                 .enterEmailAddress(email)
                 .enterPassword(password)
                 .clickToSubmitBtn();
+
+        FolderInput folderInput = new FolderInput(listName);
+        folderResponse = (FolderResponse) listSteps
+                .when_createListInSpace(folderInput)
+                .validateResponse(HttpURLConnection.HTTP_OK)
+                .saveResponseObject(FolderResponse.class);
     }
 
     @Test(description = "create task")
     public void create_task() throws IOException {
-        String listName = "nameList";
         String taskName = "taskName";
         String spaceName = "do not edit";
-        FolderInput folderInput = new FolderInput(listName);
-        FolderResponse folderResponse = (FolderResponse) listSteps
-                .when_createListInSpace(folderInput)
-                .validateResponse(HttpURLConnection.HTTP_OK)
-                .saveResponseObject(FolderResponse.class);
 
         NavigationPage navigationPage = new NavigationPage();
         TaskPage taskPage = new TaskPage();
@@ -60,8 +64,6 @@ public class TaskTests extends AbstractWebTest {
 
     @Test(description = "Sort by task name")
     public void sort_by_task_name() throws IOException, InterruptedException {
-        String listName = "nameList";
-        String taskName = "taskName";
         String spaceName = "do not edit";
 
         NavigationPage navigationPage = new NavigationPage();
@@ -100,16 +102,9 @@ public class TaskTests extends AbstractWebTest {
     }
     @Test(description = "verify create subtask function")
     public void verifyCreateSubtaskFunction() throws IOException, InterruptedException {
-        String listName = "nameList";
         String taskName = "taskName";
         String subtaskName = "subtaskName";
         String spaceName = "do not edit";
-        FolderInput folderInput = new FolderInput(listName);
-        FolderResponse folderResponse = (FolderResponse) listSteps
-                .when_createListInSpace(folderInput)
-                .validateResponse(HttpURLConnection.HTTP_OK)
-                .saveResponseObject(FolderResponse.class);
-
         NavigationPage navigationPage = new NavigationPage();
         TaskPage taskPage = new TaskPage();
         navigationPage.refreshCurrentPage();
@@ -125,6 +120,9 @@ public class TaskTests extends AbstractWebTest {
                 .enterSubtaskName(subtaskName)
                 .clickToSaveTask();
 
+    }
+    @AfterMethod(alwaysRun = true)
+    public void cleanData() throws IOException {
         //delete list
         listSteps
                 .when_deleteList(folderResponse.getId())
