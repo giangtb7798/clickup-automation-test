@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<OWASPZAPReport programName="OWASP ZAP" version="2.12.0" generated="Tue, 11 Apr 2023 09:30:48">
+<OWASPZAPReport programName="OWASP ZAP" version="2.12.0" generated="Fri, 14 Apr 2023 08:45:54">
 	
 		<site name="https://facebook.com" host="facebook.com" port="443" ssl="true">
 			<alerts>
@@ -44,7 +44,37 @@
 							
 							
 								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/ZZnKfYusN8Z.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/l/0,cross/w5DUHlSZr74.css?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/qzLmifk5qAX.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -64,16 +94,6 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/ywbXMubMv9o.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/dqq7KkaZBEl.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
@@ -84,37 +104,17 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/to5VURMJD7C.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yc/l/0,cross/9YnFxyEguC7.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/bKi--2Ukb_9.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yE/l/0,cross/RspwE1UYLwr.css?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/jcLSyE_78Zc.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -154,7 +154,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/7H6unTJHj_t.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -164,7 +164,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/C3CnmLDYuAn.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/Ib90vcVxYzI.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -194,6 +194,36 @@
 							
 							
 								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/ppLNSvMY1ls.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yL/l/0,cross/jKRtg1v53xM.css?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HuRDPAIzqSu.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/_tJ17sGyxOX.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
@@ -204,7 +234,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/wnvcbINCD7a.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -214,17 +244,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/JB-9wWPJnFi.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/ys/l/0,cross/-1NcYIZD5je.css?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/Q1Ti1UlNEHf.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -244,7 +264,27 @@
 							
 							
 								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/rO5OX6VwE2P.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yt/r/13Z4_Wh9Efg.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yU/l/0,cross/ZEOltwIBrtB.css?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -264,37 +304,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/g4yGS_I143G.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/rJ94RMpIhR7.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yw/r/wVFJ-vDeF6P.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yY/r/2PO_1JOk725.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -314,7 +324,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yU/l/en_US/10NNZmCensr.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yT/l/en_US/m0O_0sQSBA2.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -324,7 +334,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3iqES4/y0/l/en_US/kzZPEYNmLjz.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3iqES4/yD/l/en_US/KYXJIAVpZRj.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -333,13 +343,13 @@
 								</instance>
 							
 						</instances>
-						<count>31</count>
+						<count>32</count>
 						<solution>&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.&lt;/p&gt;</solution>
 						<otherinfo></otherinfo>
 						<reference>&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;&lt;p&gt;http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security&lt;/p&gt;&lt;p&gt;http://caniuse.com/stricttransportsecurity&lt;/p&gt;&lt;p&gt;http://tools.ietf.org/html/rfc6797&lt;/p&gt;</reference>
 						<cweid>319</cweid>
 						<wascid>15</wascid>
-						<sourceid>47</sourceid>
+						<sourceid>39</sourceid>
 					</alertitem>
 				
 				
@@ -360,8 +370,8 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -370,8 +380,18 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/ZZnKfYusN8Z.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -380,8 +400,28 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/qzLmifk5qAX.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -390,8 +430,8 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -400,38 +440,8 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/to5VURMJD7C.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yc/l/0,cross/9YnFxyEguC7.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/bKi--2Ukb_9.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -440,8 +450,18 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/jcLSyE_78Zc.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -600,6 +620,16 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/LgvwffuKmeX.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
 									<evidence>1695183700</evidence>
 									<otherinfo>1695183700, which evaluates to: 2023-09-20 04:21:40</otherinfo>
 								</instance>
@@ -622,16 +652,6 @@
 									<attack></attack>
 									<evidence>1779033703</evidence>
 									<otherinfo>1779033703, which evaluates to: 2026-05-17 16:01:43</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/LgvwffuKmeX.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
 								</instance>
 							
 							
@@ -720,8 +740,8 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -730,28 +750,28 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/7H6unTJHj_t.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/C3CnmLDYuAn.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/Ib90vcVxYzI.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -760,8 +780,8 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -770,8 +790,38 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/ppLNSvMY1ls.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yL/l/0,cross/jKRtg1v53xM.css?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HuRDPAIzqSu.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -1580,6 +1630,16 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/_tJ17sGyxOX.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
 									<evidence>1682292957</evidence>
 									<otherinfo>1682292957, which evaluates to: 2023-04-23 23:35:57</otherinfo>
 								</instance>
@@ -2040,16 +2100,6 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/_tJ17sGyxOX.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
 									<evidence>1817252668</evidence>
 									<otherinfo>1817252668, which evaluates to: 2027-08-03 00:24:28</otherinfo>
 								</instance>
@@ -2346,32 +2396,22 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/wnvcbINCD7a.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/JB-9wWPJnFi.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/Q1Ti1UlNEHf.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/ys/l/0,cross/-1NcYIZD5je.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -2380,8 +2420,18 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/rO5OX6VwE2P.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -2390,8 +2440,18 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yU/l/0,cross/ZEOltwIBrtB.css?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -2400,28 +2460,8 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/g4yGS_I143G.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/rJ94RMpIhR7.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -2430,18 +2470,8 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yY/r/2PO_1JOk725.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
@@ -2450,38 +2480,38 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yU/l/en_US/10NNZmCensr.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yT/l/en_US/m0O_0sQSBA2.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3iqES4/y0/l/en_US/kzZPEYNmLjz.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3iqES4/yD/l/en_US/KYXJIAVpZRj.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
+									<evidence>1679558926</evidence>
+									<otherinfo>1679558926, which evaluates to: 2023-03-23 08:08:46</otherinfo>
 								</instance>
 							
 						</instances>
-						<count>212</count>
+						<count>214</count>
 						<solution>&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;</solution>
-						<otherinfo>&lt;p&gt;1814657579, which evaluates to: 2027-07-03 23:32:59&lt;/p&gt;</otherinfo>
+						<otherinfo>&lt;p&gt;1679558926, which evaluates to: 2023-03-23 08:08:46&lt;/p&gt;</otherinfo>
 						<reference>&lt;p&gt;http://projects.webappsec.org/w/page/13246936/Information%20Leakage&lt;/p&gt;</reference>
 						<cweid>200</cweid>
 						<wascid>13</wascid>
-						<sourceid>47</sourceid>
+						<sourceid>39</sourceid>
 					</alertitem>
 				
 				
@@ -2508,32 +2538,62 @@
 							
 							
 								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>FIXME</evidence>
+									<otherinfo>The following pattern was used: \bFIXME\b and was detected in the element starting with: &quot;__d(&quot;Heartbeat&quot;,[&quot;Env&quot;,&quot;ExecutionContextObservers&quot;,&quot;FBLogger&quot;,&quot;LogBuffer&quot;,&quot;OnDemandExecutionContextObserver&quot;,&quot;TimeSlice&quot;,&quot;perfor&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>from</evidence>
+									<otherinfo>The following pattern was used: \bFROM\b and was detected 11 times, the first in the element starting with: &quot;(function(a){if(a.require!=null)return;var b=null,c=null,d=[],e={},f={},g=0,h=0,i=0,j=0,k=0,l=1,m=2,n=4,o=8,p=16,aa=32,ba=64,ca=&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>query</evidence>
+									<otherinfo>The following pattern was used: \bQUERY\b and was detected 3 times, the first in the element starting with: &quot;__d(&quot;Arbiter&quot;,[&quot;invariant&quot;,&quot;ArbiterToken&quot;,&quot;CallbackDependencyManager&quot;,&quot;ErrorGuard&quot;,&quot;EventEmitter&quot;,&quot;EventEmitterWithHolding&quot;,&quot;Eve&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>select</evidence>
+									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;__d(&quot;getMarkupWrap&quot;,[&quot;invariant&quot;,&quot;ExecutionEnvironment&quot;,&quot;TrustedTypesLinkTagHTMLPolicy&quot;],(function(a,b,c,d,e,f,g,h){var i=c(&quot;Exe&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/qzLmifk5qAX.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>select</evidence>
+									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;__d(&quot;Form&quot;,[&quot;DOM&quot;,&quot;DOMQuery&quot;,&quot;DTSG&quot;,&quot;DTSGUtils&quot;,&quot;DataStore&quot;,&quot;Input&quot;,&quot;LSD&quot;,&quot;PHPQuerySerializer&quot;,&quot;Random&quot;,&quot;SprinkleConfig&quot;,&quot;URI&quot;,&quot;&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/TW3hcH7KQRC.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
 									<evidence>user</evidence>
 									<otherinfo>The following pattern was used: \bUSER\b and was detected 2 times, the first in the element starting with: &quot;__d(&quot;BanzaiUtils&quot;,[&quot;BanzaiConsts&quot;,&quot;CurrentUser&quot;,&quot;FBLogger&quot;,&quot;WebSession&quot;,&quot;performanceAbsoluteNow&quot;],(function(a,b,c,d,e,f){&quot;use st&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/ywbXMubMv9o.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>query</evidence>
-									<otherinfo>The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;__d(&quot;ArbiterMixin&quot;,[&quot;Arbiter&quot;,&quot;guid&quot;],(function(a,b,c,d,e,f,g){var h=&quot;arbiter$&quot;+c(&quot;guid&quot;)(),i=Object.prototype.hasOwnProperty;a=&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/ywbXMubMv9o.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>select</evidence>
-									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;__d(&quot;DOM&quot;,[&quot;$&quot;,&quot;DOMQuery&quot;,&quot;Event&quot;,&quot;FBLogger&quot;,&quot;FbtResultBase&quot;,&quot;HTML&quot;,&quot;TrustedTypesIEFixDOMPolicy&quot;,&quot;UserAgent_DEPRECATED&quot;,&quot;createA&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
 								</instance>
 							
 							
@@ -2548,16 +2608,6 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/bKi--2Ukb_9.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>select</evidence>
-									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;__d(&quot;Form&quot;,[&quot;DOM&quot;,&quot;DOMQuery&quot;,&quot;DTSG&quot;,&quot;DTSGUtils&quot;,&quot;DataStore&quot;,&quot;Input&quot;,&quot;LSD&quot;,&quot;PHPQuerySerializer&quot;,&quot;Random&quot;,&quot;SprinkleConfig&quot;,&quot;URI&quot;,&quot;&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
-								</instance>
-							
-							
-								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/LgvwffuKmeX.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
@@ -2568,42 +2618,22 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>FIXME</evidence>
-									<otherinfo>The following pattern was used: \bFIXME\b and was detected in the element starting with: &quot;__d(&quot;Heartbeat&quot;,[&quot;Env&quot;,&quot;ExecutionContextObservers&quot;,&quot;FBLogger&quot;,&quot;LogBuffer&quot;,&quot;OnDemandExecutionContextObserver&quot;,&quot;TimeSlice&quot;,&quot;perfor&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/Ib90vcVxYzI.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
 									<evidence>from</evidence>
-									<otherinfo>The following pattern was used: \bFROM\b and was detected 11 times, the first in the element starting with: &quot;(function(a){if(a.require!=null)return;var b=null,c=null,d=[],e={},f={},g=0,h=0,i=0,j=0,k=0,l=1,m=2,n=4,o=8,p=16,aa=32,ba=64,ca=&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+									<otherinfo>The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;__d(&quot;BDNavigatorPluginsFileExtensionsSignalCollector&quot;,[&quot;BDSignalCollectorBase&quot;,&quot;ErrorSignalValueType&quot;,&quot;SignalErrorValueTypeDef&quot;,&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/Ib90vcVxYzI.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
 									<evidence>query</evidence>
-									<otherinfo>The following pattern was used: \bQUERY\b and was detected 3 times, the first in the element starting with: &quot;__d(&quot;Arbiter&quot;,[&quot;invariant&quot;,&quot;ArbiterToken&quot;,&quot;CallbackDependencyManager&quot;,&quot;ErrorGuard&quot;,&quot;EventEmitter&quot;,&quot;EventEmitterWithHolding&quot;,&quot;Eve&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>select</evidence>
-									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;__d(&quot;getMarkupWrap&quot;,[&quot;invariant&quot;,&quot;ExecutionEnvironment&quot;,&quot;TrustedTypesLinkTagHTMLPolicy&quot;],(function(a,b,c,d,e,f,g,h){var i=c(&quot;Exe&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+									<otherinfo>The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;__d(&quot;BDNavigatorNotificationPermissionSignalCollector&quot;,[&quot;BDSignalCollectorBase&quot;,&quot;ErrorSignalValueType&quot;,&quot;SignalErrorValueTypeDef&quot;&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
 								</instance>
 							
 							
@@ -2618,7 +2648,27 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/ppLNSvMY1ls.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>query</evidence>
+									<otherinfo>The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;__d(&quot;ArbiterMixin&quot;,[&quot;Arbiter&quot;,&quot;guid&quot;],(function(a,b,c,d,e,f,g){var h=&quot;arbiter$&quot;+c(&quot;guid&quot;)(),i=Object.prototype.hasOwnProperty;a=&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/ppLNSvMY1ls.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>select</evidence>
+									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;__d(&quot;DOM&quot;,[&quot;$&quot;,&quot;DOMQuery&quot;,&quot;Event&quot;,&quot;FBLogger&quot;,&quot;FbtResultBase&quot;,&quot;HTML&quot;,&quot;TrustedTypesIEFixDOMPolicy&quot;,&quot;UserAgent_DEPRECATED&quot;,&quot;createA&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HuRDPAIzqSu.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -2628,17 +2678,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>query</evidence>
-									<otherinfo>The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;__d(&quot;queryThenMutateDOM&quot;,[&quot;ErrorUtils&quot;,&quot;Run&quot;,&quot;TimeSlice&quot;,&quot;emptyFunction&quot;,&quot;gkx&quot;,&quot;requestAnimationFrame&quot;],(function(a,b,c,d,e,f){v&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HuRDPAIzqSu.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -2648,27 +2688,17 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/JB-9wWPJnFi.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>from</evidence>
-									<otherinfo>The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;__d(&quot;BDNavigatorPluginsFileExtensionsSignalCollector&quot;,[&quot;BDSignalCollectorBase&quot;,&quot;ErrorSignalValueType&quot;,&quot;SignalErrorValueTypeDef&quot;,&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/JB-9wWPJnFi.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/wnvcbINCD7a.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
 									<evidence>query</evidence>
-									<otherinfo>The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;__d(&quot;BDNavigatorNotificationPermissionSignalCollector&quot;,[&quot;BDSignalCollectorBase&quot;,&quot;ErrorSignalValueType&quot;,&quot;SignalErrorValueTypeDef&quot;&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+									<otherinfo>The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;__d(&quot;queryThenMutateDOM&quot;,[&quot;ErrorUtils&quot;,&quot;Run&quot;,&quot;TimeSlice&quot;,&quot;emptyFunction&quot;,&quot;gkx&quot;,&quot;requestAnimationFrame&quot;],(function(a,b,c,d,e,f){v&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/g4yGS_I143G.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/Q1Ti1UlNEHf.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -2678,17 +2708,17 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yU/l/en_US/10NNZmCensr.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yT/l/en_US/m0O_0sQSBA2.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
 									<evidence>from</evidence>
-									<otherinfo>The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;__d(&quot;StreamBlockReader&quot;,[&quot;Promise&quot;,&quot;asyncToGeneratorRuntime&quot;],(function(a,b,c,d,e,f){a=function(){function a(a){var c=this;if(!a&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+									<otherinfo>The following pattern was used: \bFROM\b and was detected in the element starting with: &quot;__d(&quot;StreamBlockReader&quot;,[&quot;Promise&quot;,&quot;regeneratorRuntime&quot;],(function(a,b,c,d,e,f){a=function(){function a(a){var c=this;if(!a.getR&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3iqES4/y0/l/en_US/kzZPEYNmLjz.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3iqES4/yD/l/en_US/KYXJIAVpZRj.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -2703,7 +2733,7 @@
 						<reference></reference>
 						<cweid>200</cweid>
 						<wascid>13</wascid>
-						<sourceid>47</sourceid>
+						<sourceid>39</sourceid>
 					</alertitem>
 				
 			</alerts>
@@ -2730,7 +2760,7 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>&lt;form class=&quot;_9vtf&quot; data-testid=&quot;royal_login_form&quot; action=&quot;/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxMjA1NDI2LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&quot; method=&quot;post&quot; onsubmit=&quot;&quot; id=&quot;u_0_2_Zh&quot;&gt;</evidence>
+									<evidence>&lt;form class=&quot;_9vtf&quot; data-testid=&quot;royal_login_form&quot; action=&quot;/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxNDYxOTMxLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&quot; method=&quot;post&quot; onsubmit=&quot;&quot; id=&quot;u_0_2_qY&quot;&gt;</evidence>
 									<otherinfo>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;email&quot; &quot;jazoest&quot; &quot;login_source&quot; &quot;lsd&quot; &quot;next&quot; &quot;pass&quot; ].</otherinfo>
 								</instance>
 							
@@ -2740,7 +2770,7 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>&lt;form class=&quot;_9vtf&quot; data-testid=&quot;royal_login_form&quot; action=&quot;/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxMjA1NDQxLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&quot; method=&quot;post&quot; onsubmit=&quot;&quot; id=&quot;u_0_2_uB&quot;&gt;</evidence>
+									<evidence>&lt;form class=&quot;_9vtf&quot; data-testid=&quot;royal_login_form&quot; action=&quot;/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxNDYxOTQ3LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&quot; method=&quot;post&quot; onsubmit=&quot;&quot; id=&quot;u_0_2_3U&quot;&gt;</evidence>
 									<otherinfo>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;email&quot; &quot;jazoest&quot; &quot;login_source&quot; &quot;lsd&quot; &quot;next&quot; &quot;pass&quot; ].</otherinfo>
 								</instance>
 							
@@ -2781,7 +2811,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=1&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=1&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2794,7 +2824,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=2&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=2&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2807,7 +2837,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=1&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824071946329471&amp;__req=1&amp;__rev=1007313655&amp;__s=7y5a5e%3Agu4n1b%3Ajfn9za&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461947&amp;__user=0&amp;dpr=1&amp;jazoest=2968&amp;lsd=AVojXLmXACk</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2820,7 +2850,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=2&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824071946329471&amp;__req=2&amp;__rev=1007313655&amp;__s=7y5a5e%3Agu4n1b%3Ajfn9za&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461947&amp;__user=0&amp;dpr=1&amp;jazoest=2968&amp;lsd=AVojXLmXACk</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2865,7 +2895,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=1&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=1&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2875,7 +2905,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=2&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=2&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2885,7 +2915,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=1&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824071946329471&amp;__req=1&amp;__rev=1007313655&amp;__s=7y5a5e%3Agu4n1b%3Ajfn9za&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461947&amp;__user=0&amp;dpr=1&amp;jazoest=2968&amp;lsd=AVojXLmXACk</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2895,7 +2925,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=2&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824071946329471&amp;__req=2&amp;__rev=1007313655&amp;__s=7y5a5e%3Agu4n1b%3Ajfn9za&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461947&amp;__user=0&amp;dpr=1&amp;jazoest=2968&amp;lsd=AVojXLmXACk</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2937,7 +2967,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=1&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=1&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2947,7 +2977,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=2&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=2&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2957,7 +2987,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=1&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824071946329471&amp;__req=1&amp;__rev=1007313655&amp;__s=7y5a5e%3Agu4n1b%3Ajfn9za&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461947&amp;__user=0&amp;dpr=1&amp;jazoest=2968&amp;lsd=AVojXLmXACk</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2967,7 +2997,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=2&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824071946329471&amp;__req=2&amp;__rev=1007313655&amp;__s=7y5a5e%3Agu4n1b%3Ajfn9za&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461947&amp;__user=0&amp;dpr=1&amp;jazoest=2968&amp;lsd=AVojXLmXACk</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3009,7 +3039,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=1&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=1&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3019,7 +3049,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=2&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=2&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3029,7 +3059,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=1&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824071946329471&amp;__req=1&amp;__rev=1007313655&amp;__s=7y5a5e%3Agu4n1b%3Ajfn9za&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461947&amp;__user=0&amp;dpr=1&amp;jazoest=2968&amp;lsd=AVojXLmXACk</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3039,7 +3069,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=2&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824071946329471&amp;__req=2&amp;__rev=1007313655&amp;__s=7y5a5e%3Agu4n1b%3Ajfn9za&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461947&amp;__user=0&amp;dpr=1&amp;jazoest=2968&amp;lsd=AVojXLmXACk</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3115,9 +3145,9 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 								<instance>
 									<uri>https://www.facebook.com/</uri>
 									<method>GET</method>
-									<param>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz</param>
+									<param>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</param>
 									<attack></attack>
-									<evidence>&lt;script src=&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz&quot; data-bootloader-hash=&quot;xiNwIjT&quot; crossorigin=&quot;anonymous&quot; nonce=&quot;HJSxR19P&quot;&gt;&lt;/script&gt;</evidence>
+									<evidence>&lt;script src=&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz&quot; data-bootloader-hash=&quot;xiNwIjT&quot; crossorigin=&quot;anonymous&quot; nonce=&quot;lqrh4pLh&quot;&gt;&lt;/script&gt;</evidence>
 									<otherinfo></otherinfo>
 								</instance>
 							
@@ -3125,9 +3155,9 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 								<instance>
 									<uri>https://www.facebook.com/</uri>
 									<method>GET</method>
-									<param>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz</param>
+									<param>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</param>
 									<attack></attack>
-									<evidence>&lt;script src=&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/4lwhzANeptW.js?_nc_x=Ij3Wp8lg5Kz&quot; data-bootloader-hash=&quot;xiNwIjT&quot; crossorigin=&quot;anonymous&quot; nonce=&quot;ofuVz7yx&quot;&gt;&lt;/script&gt;</evidence>
+									<evidence>&lt;script src=&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz&quot; data-bootloader-hash=&quot;xiNwIjT&quot; crossorigin=&quot;anonymous&quot; nonce=&quot;mriYMCyu&quot;&gt;&lt;/script&gt;</evidence>
 									<otherinfo></otherinfo>
 								</instance>
 							
@@ -3138,7 +3168,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 						<reference></reference>
 						<cweid>829</cweid>
 						<wascid>15</wascid>
-						<sourceid>1</sourceid>
+						<sourceid>115</sourceid>
 					</alertitem>
 				
 				
@@ -3169,8 +3199,8 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1681205426</evidence>
-									<otherinfo>1681205426, which evaluates to: 2023-04-11 09:30:26</otherinfo>
+									<evidence>1681461931</evidence>
+									<otherinfo>1681461931, which evaluates to: 2023-04-14 08:45:31</otherinfo>
 								</instance>
 							
 							
@@ -3179,8 +3209,8 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1681205441</evidence>
-									<otherinfo>1681205441, which evaluates to: 2023-04-11 09:30:41</otherinfo>
+									<evidence>1681461947</evidence>
+									<otherinfo>1681461947, which evaluates to: 2023-04-14 08:45:47</otherinfo>
 								</instance>
 							
 						</instances>
@@ -3207,7 +3237,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 						<instances>
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=1&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=1&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>__user</param>
 									<attack></attack>
@@ -3218,17 +3248,9 @@ __user</otherinfo>
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722323041221218&amp;__req=2&amp;__rev=1007282073&amp;__s=z31y9f%3Ao1liox%3Asvck64&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205426&amp;__user=0&amp;dpr=1&amp;jazoest=2844&amp;lsd=AVr_HIID6GI</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=GOOD&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221824003726544998&amp;__req=2&amp;__rev=1007313655&amp;__s=wvvg1o%3A669ahb%3Alil3kz&amp;__spin_b=trunk&amp;__spin_r=1007313655&amp;__spin_t=1681461931&amp;__user=0&amp;dpr=1&amp;jazoest=2921&amp;lsd=AVoyScNB2YI</uri>
 									<method>POST</method>
 									<param>__user</param>
 									<attack></attack>
 									<evidence>__user</evidence>
-									<otherinfo>The URL contains potentially sensitive information. The following string was found via the pattern: user
-__user</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__comet_req=0&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19458.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7220722388346820778&amp;__req=1&amp;__rev=1007282073&amp;__s=gbbsz6%3Adiezqr%3Ax21bil&amp;__spin_b=trunk&amp;__spin_r=1007282073&amp;__spin_t=1681205441&amp;__user=0&amp;dpr=1&amp;jazoest=2938&amp;lsd=AVr1xs44Mek</uri>
-									<method>POST</method>
-							
+									<otherinfo>The URL contains potentially sensitive information. The following string was found via the pat
