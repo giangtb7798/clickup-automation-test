@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<OWASPZAPReport programName="OWASP ZAP" version="2.12.0" generated="Fri, 14 Apr 2023 10:35:36">
+<OWASPZAPReport programName="OWASP ZAP" version="2.12.0" generated="Mon, 17 Apr 2023 07:27:50">
 	
 		<site name="https://facebook.com" host="facebook.com" port="443" ssl="true">
 			<alerts>
@@ -84,6 +84,16 @@
 							
 							
 								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/5BcsnvZrG0b.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/TW3hcH7KQRC.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
@@ -124,6 +134,16 @@
 							
 							
 								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/6EVdpmdyo0x.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/LgvwffuKmeX.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
@@ -145,16 +165,6 @@
 							
 								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yi/l/0,cross/yotEdcUw9Gj.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/7H6unTJHj_t.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -204,26 +214,6 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yL/l/0,cross/jKRtg1v53xM.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HuRDPAIzqSu.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/_tJ17sGyxOX.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
@@ -234,7 +224,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/wnvcbINCD7a.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -245,6 +235,16 @@
 							
 								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yR/r/Q1Ti1UlNEHf.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/ys/l/0,cross/-1NcYIZD5je.css?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -274,36 +274,6 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yt/r/13Z4_Wh9Efg.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yU/l/0,cross/ZEOltwIBrtB.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/E1o-U_BBANK.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yw/r/wVFJ-vDeF6P.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
@@ -324,7 +294,27 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yT/l/en_US/m0O_0sQSBA2.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yz/l/0,cross/U49YHFGQge5.css?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/pOZsUvWsLPh.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yj/l/en_US/5a3uNG9_Yvd.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -343,13 +333,13 @@
 								</instance>
 							
 						</instances>
-						<count>32</count>
+						<count>31</count>
 						<solution>&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is configured to enforce Strict-Transport-Security.&lt;/p&gt;</solution>
 						<otherinfo></otherinfo>
 						<reference>&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;&lt;p&gt;http://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security&lt;/p&gt;&lt;p&gt;http://caniuse.com/stricttransportsecurity&lt;/p&gt;&lt;p&gt;http://tools.ietf.org/html/rfc6797&lt;/p&gt;</reference>
 						<cweid>319</cweid>
 						<wascid>15</wascid>
-						<sourceid>42</sourceid>
+						<sourceid>36</sourceid>
 					</alertitem>
 				
 				
@@ -364,96 +354,6 @@
 						<confidencedesc>Low</confidencedesc>
 						<desc>&lt;p&gt;A timestamp was disclosed by the application/web server - Unix&lt;/p&gt;</desc>
 						<instances>
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/UnGsopwfyr7.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/3FPJ9YC_wUr.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/ZZnKfYusN8Z.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/qzLmifk5qAX.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/TW3hcH7KQRC.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/dqq7KkaZBEl.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yE/l/0,cross/RspwE1UYLwr.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/jcLSyE_78Zc.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
 							
 								<instance>
 									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/LgvwffuKmeX.js?_nc_x=Ij3Wp8lg5Kz</uri>
@@ -640,16 +540,6 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/LgvwffuKmeX.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
 									<evidence>1816402316</evidence>
 									<otherinfo>1816402316, which evaluates to: 2027-07-24 04:11:56</otherinfo>
 								</instance>
@@ -722,86 +612,6 @@
 									<attack></attack>
 									<evidence>1996064986</evidence>
 									<otherinfo>1996064986, which evaluates to: 2033-04-02 14:29:46</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yi/l/0,cross/yotEdcUw9Gj.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/7H6unTJHj_t.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/Ib90vcVxYzI.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/z44tIw900d6.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/fONXP2Y_GuZ.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/ppLNSvMY1ls.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yL/l/0,cross/jKRtg1v53xM.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HuRDPAIzqSu.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
 								</instance>
 							
 							
@@ -2070,16 +1880,6 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/_tJ17sGyxOX.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
 									<evidence>1817252668</evidence>
 									<otherinfo>1817252668, which evaluates to: 2027-08-03 00:24:28</otherinfo>
 								</instance>
@@ -2374,114 +2174,14 @@
 									<otherinfo>1983633131, which evaluates to: 2032-11-09 17:12:11</otherinfo>
 								</instance>
 							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/wnvcbINCD7a.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/ISoA4mVNE-i.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/rO5OX6VwE2P.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yt/r/13Z4_Wh9Efg.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yU/l/0,cross/ZEOltwIBrtB.css?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/E1o-U_BBANK.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yw/r/wVFJ-vDeF6P.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/IHO-YZS6yVi.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yT/l/en_US/m0O_0sQSBA2.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3iqES4/yD/l/en_US/KYXJIAVpZRj.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>1814657579</evidence>
-									<otherinfo>1814657579, which evaluates to: 2027-07-03 23:32:59</otherinfo>
-								</instance>
-							
 						</instances>
-						<count>211</count>
+						<count>182</count>
 						<solution>&lt;p&gt;Manually confirm that the timestamp data is not sensitive, and that the data cannot be aggregated to disclose exploitable patterns.&lt;/p&gt;</solution>
-						<otherinfo>&lt;p&gt;1814657579, which evaluates to: 2027-07-03 23:32:59&lt;/p&gt;</otherinfo>
+						<otherinfo>&lt;p&gt;1396182291, which evaluates to: 2014-03-30 12:24:51&lt;/p&gt;</otherinfo>
 						<reference>&lt;p&gt;http://projects.webappsec.org/w/page/13246936/Information%20Leakage&lt;/p&gt;</reference>
 						<cweid>200</cweid>
 						<wascid>13</wascid>
-						<sourceid>132</sourceid>
+						<sourceid>93</sourceid>
 					</alertitem>
 				
 				
@@ -2638,7 +2338,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HuRDPAIzqSu.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -2648,22 +2348,22 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/HuRDPAIzqSu.js?_nc_x=Ij3Wp8lg5Kz</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence>SELECT</evidence>
-									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;__d(&quot;isElementInteractive&quot;,[&quot;isContentEditable&quot;],(function(a,b,c,d,e,f,g){&quot;use strict&quot;;var h=new Set([&quot;EMBED&quot;,&quot;INPUT&quot;,&quot;OBJECT&quot;,&quot;&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yQ/r/wnvcbINCD7a.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
 									<evidence>query</evidence>
 									<otherinfo>The following pattern was used: \bQUERY\b and was detected in the element starting with: &quot;__d(&quot;queryThenMutateDOM&quot;,[&quot;ErrorUtils&quot;,&quot;Run&quot;,&quot;TimeSlice&quot;,&quot;emptyFunction&quot;,&quot;gkx&quot;,&quot;requestAnimationFrame&quot;],(function(a,b,c,d,e,f){v&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3/yp/r/jmY_tZbcjAk.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>SELECT</evidence>
+									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;__d(&quot;isElementInteractive&quot;,[&quot;isContentEditable&quot;],(function(a,b,c,d,e,f,g){&quot;use strict&quot;;var h=new Set([&quot;EMBED&quot;,&quot;INPUT&quot;,&quot;OBJECT&quot;,&quot;&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
 								</instance>
 							
 							
@@ -2678,7 +2378,7 @@
 							
 							
 								<instance>
-									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yT/l/en_US/m0O_0sQSBA2.js?_nc_x=Ij3Wp8lg5Kz</uri>
+									<uri>https://static.xx.fbcdn.net/rsrc.php/v3i7M54/yj/l/en_US/5a3uNG9_Yvd.js?_nc_x=Ij3Wp8lg5Kz</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -2703,7 +2403,7 @@
 						<reference></reference>
 						<cweid>200</cweid>
 						<wascid>13</wascid>
-						<sourceid>42</sourceid>
+						<sourceid>36</sourceid>
 					</alertitem>
 				
 			</alerts>
@@ -2730,7 +2430,7 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>&lt;form class=&quot;_9vtf&quot; data-testid=&quot;royal_login_form&quot; action=&quot;/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxNDY4NTE4LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&quot; method=&quot;post&quot; onsubmit=&quot;&quot; id=&quot;u_0_2_4B&quot;&gt;</evidence>
+									<evidence>&lt;form class=&quot;_9vtf&quot; data-testid=&quot;royal_login_form&quot; action=&quot;/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxNzE2NDUwLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&quot; method=&quot;post&quot; onsubmit=&quot;&quot; id=&quot;u_0_2_Ap&quot;&gt;</evidence>
 									<otherinfo>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;email&quot; &quot;jazoest&quot; &quot;login_source&quot; &quot;lsd&quot; &quot;next&quot; &quot;pass&quot; ].</otherinfo>
 								</instance>
 							
@@ -2740,7 +2440,7 @@
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>&lt;form class=&quot;_9vtf&quot; data-testid=&quot;royal_login_form&quot; action=&quot;/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxNDY4NTMwLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&quot; method=&quot;post&quot; onsubmit=&quot;&quot; id=&quot;u_0_2_3y&quot;&gt;</evidence>
+									<evidence>&lt;form class=&quot;_9vtf&quot; data-testid=&quot;royal_login_form&quot; action=&quot;/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjgxNzE2NDY0LCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&quot; method=&quot;post&quot; onsubmit=&quot;&quot; id=&quot;u_0_2_QC&quot;&gt;</evidence>
 									<otherinfo>No known Anti-CSRF token [anticsrf, CSRFToken, __RequestVerificationToken, csrfmiddlewaretoken, authenticity_token, OWASP_CSRFTOKEN, anoncsrf, csrf_token, _csrf, _csrfSecret, __csrf_magic, CSRF, _token, _csrf_token] was found in the following HTML form: [Form 1: &quot;email&quot; &quot;jazoest&quot; &quot;login_source&quot; &quot;lsd&quot; &quot;next&quot; &quot;pass&quot; ].</otherinfo>
 								</instance>
 							
@@ -2781,7 +2481,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=1&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=1&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2794,7 +2494,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=2&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=2&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2807,7 +2507,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=1&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=1&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2820,7 +2520,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=2&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=2&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2865,7 +2565,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=1&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=1&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2875,7 +2575,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=2&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=2&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2885,7 +2585,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=1&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=1&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2895,7 +2595,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=2&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=2&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2937,7 +2637,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=1&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=1&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2947,7 +2647,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=2&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=2&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2957,7 +2657,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=1&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=1&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -2967,7 +2667,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=2&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=2&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3009,7 +2709,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=1&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=1&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3019,7 +2719,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=2&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=2&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3029,7 +2729,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=1&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=1&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3039,7 +2739,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=2&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=2&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>content-security-policy</param>
 									<attack></attack>
@@ -3117,7 +2817,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 									<method>GET</method>
 									<param>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</param>
 									<attack></attack>
-									<evidence>&lt;script src=&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz&quot; data-bootloader-hash=&quot;xiNwIjT&quot; crossorigin=&quot;anonymous&quot; nonce=&quot;1PiFkE5X&quot;&gt;&lt;/script&gt;</evidence>
+									<evidence>&lt;script src=&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz&quot; data-bootloader-hash=&quot;xiNwIjT&quot; crossorigin=&quot;anonymous&quot; nonce=&quot;WCpCGuOM&quot;&gt;&lt;/script&gt;</evidence>
 									<otherinfo></otherinfo>
 								</instance>
 							
@@ -3127,7 +2827,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 									<method>GET</method>
 									<param>https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz</param>
 									<attack></attack>
-									<evidence>&lt;script src=&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz&quot; data-bootloader-hash=&quot;xiNwIjT&quot; crossorigin=&quot;anonymous&quot; nonce=&quot;j3EwQQfS&quot;&gt;&lt;/script&gt;</evidence>
+									<evidence>&lt;script src=&quot;https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/PTAMAF8Hi8v.js?_nc_x=Ij3Wp8lg5Kz&quot; data-bootloader-hash=&quot;xiNwIjT&quot; crossorigin=&quot;anonymous&quot; nonce=&quot;uk5qEjPB&quot;&gt;&lt;/script&gt;</evidence>
 									<otherinfo></otherinfo>
 								</instance>
 							
@@ -3169,8 +2869,8 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1681468518</evidence>
-									<otherinfo>1681468518, which evaluates to: 2023-04-14 10:35:18</otherinfo>
+									<evidence>1681716450</evidence>
+									<otherinfo>1681716450, which evaluates to: 2023-04-17 07:27:30</otherinfo>
 								</instance>
 							
 							
@@ -3179,8 +2879,8 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>1681468530</evidence>
-									<otherinfo>1681468530, which evaluates to: 2023-04-14 10:35:30</otherinfo>
+									<evidence>1681716464</evidence>
+									<otherinfo>1681716464, which evaluates to: 2023-04-17 07:27:44</otherinfo>
 								</instance>
 							
 						</instances>
@@ -3207,7 +2907,7 @@ The directive(s): frame-ancestors, form-action are among the directives that do 
 						<instances>
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=1&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=1&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>__user</param>
 									<attack></attack>
@@ -3218,7 +2918,7 @@ __user</otherinfo>
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852294861494059&amp;__req=2&amp;__rev=1007314123&amp;__s=rahfqm%3Afsy172%3A2lnlb9&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468518&amp;__user=0&amp;dpr=1&amp;jazoest=2864&amp;lsd=AVoc-NWSDMA</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917154953218293&amp;__req=2&amp;__rev=1007322795&amp;__s=x1h2e6%3A7cfsc1%3Amvg1vi&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716450&amp;__user=0&amp;dpr=1&amp;jazoest=21057&amp;lsd=AVrhoanZlkA</uri>
 									<method>POST</method>
 									<param>__user</param>
 									<attack></attack>
@@ -3229,7 +2929,7 @@ __user</otherinfo>
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19461.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7221852346544967682&amp;__req=1&amp;__rev=1007314123&amp;__s=rsbd58%3Apx9w9w%3As5q7o6&amp;__spin_b=trunk&amp;__spin_r=1007314123&amp;__spin_t=1681468530&amp;__user=0&amp;dpr=1&amp;jazoest=21046&amp;lsd=AVqoyfIjcr8</uri>
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=1&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
 									<method>POST</method>
 									<param>__user</param>
 									<attack></attack>
@@ -3240,4 +2940,51 @@ __user</otherinfo>
 							
 							
 								<instance>
-									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0l
+									<uri>https://www.facebook.com/ajax/bz?__a=1&amp;__ccg=EXCELLENT&amp;__dyn=7xe6E5aQ1PyUbFuC1swgE98nwgU29zEdEc8uwdK0lW4o3Bw5VCwjE3awbG782Cw8G1Qw5Mx61vw5zwwwi81nE1u83mwaS0zE1bE1AE17U2ZwrU19E36w&amp;__hs=19464.BP%3ADEFAULT.2.0..0.0&amp;__hsi=7222917214686567295&amp;__req=2&amp;__rev=1007322795&amp;__s=5m60kf%3Afrcyxi%3Atahf4g&amp;__spin_b=trunk&amp;__spin_r=1007322795&amp;__spin_t=1681716464&amp;__user=0&amp;dpr=1&amp;jazoest=2939&amp;lsd=AVqQumBOJTA</uri>
+									<method>POST</method>
+									<param>__user</param>
+									<attack></attack>
+									<evidence>__user</evidence>
+									<otherinfo>The URL contains potentially sensitive information. The following string was found via the pattern: user
+__user</otherinfo>
+								</instance>
+							
+						</instances>
+						<count>4</count>
+						<solution>&lt;p&gt;Do not pass sensitive information in URIs.&lt;/p&gt;</solution>
+						<otherinfo>&lt;p&gt;The URL contains potentially sensitive information. The following string was found via the pattern: user&lt;/p&gt;&lt;p&gt;__user&lt;/p&gt;</otherinfo>
+						<reference></reference>
+						<cweid>200</cweid>
+						<wascid>13</wascid>
+						<sourceid>112</sourceid>
+					</alertitem>
+				
+				
+					<alertitem>
+						<pluginid>90033</pluginid>
+						<alertRef>90033</alertRef>
+						<alert>Loosely Scoped Cookie</alert>
+						<name>Loosely Scoped Cookie</name>
+						<riskcode>0</riskcode>
+						<confidence>1</confidence>
+						<riskdesc>Informational (Low)</riskdesc>
+						<confidencedesc>Low</confidencedesc>
+						<desc>&lt;p&gt;Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com. Cookies set from a subdomain like app.foo.bar are transmitted only to that domain by the browser. However, cookies scoped to a parent-level domain may be transmitted to the parent, or any subdomain of the parent.&lt;/p&gt;</desc>
+						<instances>
+							
+								<instance>
+									<uri>https://www.facebook.com/</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>The origin domain used for comparison was: 
+www.facebook.com
+fr=001MttANTloPmfl9h..BkPPTw.KG.AAA.0.0.BkPPTw.AWXXVP9Rjao
+sb=8PQ8ZNDrbToUcTDyhBc2aB2g
+</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://www.facebook
