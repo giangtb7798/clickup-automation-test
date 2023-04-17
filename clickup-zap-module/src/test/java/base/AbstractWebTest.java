@@ -1,8 +1,6 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.example.config.WebAppDriverManager;
-import org.example.helpers.AllureListner;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,8 +11,6 @@ import org.zaproxy.clientapi.core.ClientApi;
 
 import java.io.IOException;
 
-import static org.example.config.WebAppDriverManager.closeBrowser;
-import static org.example.config.WebAppDriverManager.openMultiBrowser;
 
 public class AbstractWebTest {
     public WebDriver driver;
