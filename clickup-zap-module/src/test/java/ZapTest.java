@@ -27,12 +27,39 @@ public class ZapTest extends AbstractWebTest {
 
     @Test(description = "before login", groups = {"before_login"})
     public void before_login() throws ClientApiException, InterruptedException, IOException {
+        ClientApi api;
+        Proxy proxy = new Proxy();
+        proxy.setHttpProxy("localhost:8080");
+        proxy.setSslProxy("localhost:8080");
+
+        //Setup the web browser
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setAcceptInsecureCerts(true);
+        chromeOptions.addArguments(new String[]{"headless"});
+        chromeOptions.setProxy(proxy);
+        WebDriver driver = new ChromeDriver(chromeOptions);
+
         api = new ClientApi("localhost", 8080);
         api.automation.endDelayJob();
-
         //Open the URL
         driver.get("https://www.facebook.com/");
+/*        //Login
+        driver.findElement(By.id("username")).sendKeys("admin");
+        driver.findElement(By.id("password")).sendKeys("password");
+        driver.findElement(By.name
+        ("submit")).click();*/
         sleep(5000);
+
+/*        if(api != null) {
+            String title = "ZAP Scanning Report";
+            String template = "traditional-html";
+            String description = "this this zap test report";
+            String reportFileName = "2023-01-28-ZAP-Report-.html";
+            String targetFolder = System.getProperty("user.dir");
+            api.reports.generate(title, template, null, description, null, null, null, null,
+                    null, reportFileName, null, targetFolder, null);
+        }*/
         Path path = Paths.get("security-reports");
         Files.createDirectories(path);
         FileWriter fw = new FileWriter(new File("security-reports/" + "sth" + "_report.xml"));
@@ -41,35 +68,8 @@ public class ZapTest extends AbstractWebTest {
         fw.write(new String(api.core.htmlreport()));
         fw.close();
 
-    }
-    @Test(description = "After login", groups = {"after_login"})
-    public void after_login() throws ClientApiException, InterruptedException, IOException {
-
-        String mail = "ntruonggiangtb98@gmail.com";
-        String password = "07071998Gg";
-
-        api = new ClientApi("localhost", 8080);
-
-        //scan
-        api.automation.endDelayJob();
-        //Open the URL
-        driver.get("https://app.clickup.com/");
-
-        //login
-        driver.findElement(By.id("login-email-input")).sendKeys(mail);
-        driver.findElement(By.id("login-password-input")).sendKeys(password);
-        driver.findElement(By.xpath("//button[@data-test=\"login-submit\"]")).click();
-        WebElement firstResult = new WebDriverWait(driver, 60l)
-                .until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'Home')]")));
-
-        //report
-        Path path = Paths.get("security-reports");
-        Files.createDirectories(path);
-        FileWriter fw = new FileWriter(new File("security-reports/" + "sth" + "_report.xml"));
-        fw.write(new String(api.core.xmlreport()));
-        fw = new FileWriter(new File("security-reports/" + "index.html"));
-        fw.write(new String(api.core.htmlreport()));
-        fw.close();
+        //Quit the browser
+        driver.quit();
 
     }
 }
