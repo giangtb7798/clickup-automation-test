@@ -25,7 +25,7 @@ import static java.lang.Thread.sleep;
 
 public class ZapTest extends AbstractWebTest {
 
-    @Test(description = "before login")
+    @Test(description = "before login", groups = {"before_login"})
     public void before_login() throws ClientApiException, InterruptedException, IOException {
         ClientApi api;
 
@@ -44,7 +44,7 @@ public class ZapTest extends AbstractWebTest {
         fw.close();
 
     }
-    @Test(description = "After login")
+    @Test(description = "After login", groups = {"after_login"})
     public void after_login() throws ClientApiException, InterruptedException, IOException {
         ClientApi api;
         String mail = "ntruonggiangtb98@gmail.com";
