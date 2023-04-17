@@ -59,7 +59,7 @@ public class ZapTest extends AbstractWebTest {
         driver.quit();
 
     }
-    @Test(description = "after login", groups = {"before_login"})
+    @Test(description = "after login", groups = {"after_login"})
     public void after_login() throws ClientApiException, InterruptedException, IOException {
         String mail = "ntruonggiangtb98@gmail.com";
         String password = "07071998Gg";
