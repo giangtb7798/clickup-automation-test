@@ -11,7 +11,7 @@ name: ZAP_Test
 on:
   workflow_dispatch:
     inputs:
-      web-group:
+      zap-group:
         description: "ZAP_GROUP"
 jobs:
   configure-zap:
@@ -42,7 +42,7 @@ jobs:
         GITHUB_USER_REF: ${{ secrets.GH_PACKAGE_REPO_USERNAME }}
         GITHUB_TOKEN_REF: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
     - name: run with maven
-      run: mvn -pl clickup-zap-module "-DclickUpZap.group=${{github.event.inputs.zap_group}}" test
+      run: mvn -pl clickup-zap-module "-DclickUpZap.group=${{github.event.inputs.zap-group}}" test
       
 
     - name: Deploy report to Github Pages
