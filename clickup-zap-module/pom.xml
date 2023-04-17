@@ -16,10 +16,13 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-surefire-plugin-version>3.0.0-M5</maven-surefire-plugin-version>
+        <defaultSuiteFiles>
+            zap-test-suite.xml,
+        </defaultSuiteFiles>
+        <suiteFile>${defaultSuiteFiles}</suiteFile>
     </properties>
 
     <dependencies>
-
 
         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
         <dependency>
@@ -66,7 +69,17 @@
             <version>7.4.0</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.apache-extras.beanshell</groupId>
+            <artifactId>bsh</artifactId>
+            <version>2.0b6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>3.141.59</version>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
     <build>
@@ -77,6 +90,10 @@
                 <version>${maven-surefire-plugin-version}</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
+                    <suiteXmlFiles>
+                        <!-- pass testng.xml files as argument from command line -->
+                        <suiteXmlFile>${defaultSuiteFiles}</suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
 
             </plugin>

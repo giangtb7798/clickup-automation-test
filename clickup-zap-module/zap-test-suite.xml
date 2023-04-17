@@ -2,6 +2,34 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Setel Regression Suite" configfailurepolicy="continue" verbose="1" parallel="classes" thread-count="2">
     <test name="Setel Admin test on chrome">
+        <method-selectors>
+            <method-selector>
+                <script language="beanshell">
+                    <![CDATA[
+                    import java.util.ArrayList;
+
+                    String whatGroup = System.getProperty("clickUpZap.group");
+                    System.out.println("whatGroup = " + whatGroup);
+                    if (whatGroup.isEmpty()) {
+                        return true;
+                    }
+
+                    if (!whatGroup.contains(",")) {
+                        return groups.containsKey(whatGroup);
+                    }
+                    String[] whatGroups = whatGroup.split(",");
+
+                    boolean flag = false;
+                    for (String eachGroup: whatGroups) {
+                        if (groups.containsKey(eachGroup.trim())) {
+                            flag = true;
+                        }
+                    }
+                    flag;
+                ]]>
+                </script>
+            </method-selector>
+        </method-selectors>
         <classes>
             <class name="ZapTest"></class>
         </classes>
