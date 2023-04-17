@@ -27,14 +27,12 @@ public class ZapTest extends AbstractWebTest {
 
     @Test(description = "before login", groups = {"before_login"})
     public void before_login() throws ClientApiException, InterruptedException, IOException {
-        ClientApi api;
-
         api = new ClientApi("localhost", 8080);
         api.automation.endDelayJob();
 
         //Open the URL
         driver.get("https://www.facebook.com/");
-
+        sleep(5000);
         Path path = Paths.get("security-reports");
         Files.createDirectories(path);
         FileWriter fw = new FileWriter(new File("security-reports/" + "sth" + "_report.xml"));
@@ -46,7 +44,7 @@ public class ZapTest extends AbstractWebTest {
     }
     @Test(description = "After login", groups = {"after_login"})
     public void after_login() throws ClientApiException, InterruptedException, IOException {
-        ClientApi api;
+
         String mail = "ntruonggiangtb98@gmail.com";
         String password = "07071998Gg";
 
