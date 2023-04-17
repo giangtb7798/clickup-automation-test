@@ -33,7 +33,7 @@ public class AbstractWebTest {
     }
     @AfterMethod(alwaysRun = true)
     public void afterMethod() throws IOException {
-        //driver.close();
+        driver.close();
     }
 
 
