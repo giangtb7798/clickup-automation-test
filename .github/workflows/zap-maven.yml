@@ -11,7 +11,7 @@ name: ZAP_Test
 on:
   workflow_dispatch:
     inputs:
-      web-group:
+      zap-group:
         description: "ZAP_GROUP"
 jobs:
   configure-zap:
