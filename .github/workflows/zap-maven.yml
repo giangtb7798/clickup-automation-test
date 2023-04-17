@@ -6,11 +6,13 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: ZAP_Test
 
 on:
   workflow_dispatch:
-
+    inputs:
+      web-group:
+        description: "ZAP_GROUP"
 jobs:
   configure-zap:
 
@@ -18,7 +20,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up JDK 11
+    - name: Set up JDK 8
       uses: actions/setup-java@v3
       with:
         java-version: '8'
@@ -40,7 +42,7 @@ jobs:
         GITHUB_USER_REF: ${{ secrets.GH_PACKAGE_REPO_USERNAME }}
         GITHUB_TOKEN_REF: ${{ secrets.GH_PACKAGE_REPO_PASSWORD }}
     - name: run with maven
-      run: mvn -pl clickup-zap-module test
+      run: mvn -pl clickup-zap-module "-DclickUpZap.group=${{github.event.inputs.zap-group}}" test
       
 
     - name: Deploy report to Github Pages
