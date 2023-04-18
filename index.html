@@ -123,11 +123,11 @@ td {
 	<h2>
 		
 		
-		Sites: https://cnv.event.prod.bidr.io https://pixel.pointmediatracker.com https://canny.io https://fonts.gstatic.com https://accounts.google.com https://www.gstatic.com https://apis.google.com https://www.google-analytics.com https://www.google.com https://googleads.g.doubleclick.net https://ws.clickup.com https://sdk.split.io https://www.googletagmanager.com https://app-cdn.clickup.com https://app.clickup.com
+		Sites: https://cnv.event.prod.bidr.io https://pixel.pointmediatracker.com https://canny.io https://accounts.google.com https://fonts.gstatic.com https://www.google-analytics.com https://www.gstatic.com https://apis.google.com https://googleads.g.doubleclick.net https://www.google.com https://ws.clickup.com https://sdk.split.io https://www.googletagmanager.com https://app-cdn.clickup.com https://app.clickup.com
 	</h2>
 
 	<h3>
-		Generated on Mon, 17 Apr 2023 11:26:27
+		Generated on Tue, 18 Apr 2023 02:57:57
 	</h3>
 
 	
@@ -152,7 +152,7 @@ td {
 					<div>Medium</div>
 				</td>
 				<td align="center">
-					<div>3</div>
+					<div>4</div>
 				</td>
 			</tr>
 			<tr>
@@ -160,7 +160,7 @@ td {
 					<div>Low</div>
 				</td>
 				<td align="center">
-					<div>2</div>
+					<div>3</div>
 				</td>
 			</tr>
 			<tr>
@@ -168,7 +168,7 @@ td {
 					<div>Informational</div>
 				</td>
 				<td align="center">
-					<div>3</div>
+					<div>5</div>
 				</td>
 			</tr>
 			<tr>
@@ -209,6 +209,11 @@ td {
 				<td align="center">1</td>
 			</tr>
 			<tr>
+				<td><a href="#10098">Cross-Domain Misconfiguration</a></td>
+				<td align="center" class="risk-2">Medium</td>
+				<td align="center">2</td>
+			</tr>
+			<tr>
 				<td><a href="#10055">CSP: Notices</a></td>
 				<td align="center" class="risk-1">Low</td>
 				<td align="center">1</td>
@@ -219,9 +224,19 @@ td {
 				<td align="center">6</td>
 			</tr>
 			<tr>
+				<td><a href="#10021">X-Content-Type-Options Header Missing</a></td>
+				<td align="center" class="risk-1">Low</td>
+				<td align="center">4</td>
+			</tr>
+			<tr>
+				<td><a href="#10019">Content-Type Header Missing</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">2</td>
+			</tr>
+			<tr>
 				<td><a href="#10027">Information Disclosure - Suspicious Comments</a></td>
 				<td align="center" class="risk-0">Informational</td>
-				<td align="center">4</td>
+				<td align="center">12</td>
 			</tr>
 			<tr>
 				<td><a href="#10109">Modern Web Application</a></td>
@@ -232,6 +247,11 @@ td {
 				<td><a href="#10015">Re-examine Cache-control Directives</a></td>
 				<td align="center" class="risk-0">Informational</td>
 				<td align="center">1</td>
+			</tr>
+			<tr>
+				<td><a href="#10050">Retrieved from Cache</a></td>
+				<td align="center" class="risk-0">Informational</td>
+				<td align="center">2</td>
 			</tr>
 		</table>
 		<div class="spacer-lg"></div>
@@ -512,6 +532,114 @@ td {
 		
 			<table class="results">
 				<tr height="24">
+					<th width="20%" class="risk-2"><a
+						id="10098"></a>
+						<div>Medium</div></th>
+					<th class="risk-2">Cross-Domain Misconfiguration</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtag/js?id=AW-617640813">https://www.googletagmanager.com/gtag/js?id=AW-617640813</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X">https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Access-Control-Allow-Origin: *</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">2</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</div>
+							<br />
+						
+							<div>Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy">https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/264.html">264</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">14</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10098/">10098</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
 					<th width="20%" class="risk-1"><a
 						id="10055"></a>
 						<div>Low</div></th>
@@ -729,7 +857,7 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
-						<td width="80%"><a href="https://app-cdn.clickup.com/runtime.5a4be2f4913fa2.js">https://app-cdn.clickup.com/runtime.5a4be2f4913fa2.js</a></td>
+						<td width="80%"><a href="https://app-cdn.clickup.com/runtime.947b4b6140968f.js">https://app-cdn.clickup.com/runtime.947b4b6140968f.js</a></td>
 					</tr>
 					<tr>
 						<td width="20%"
@@ -824,6 +952,274 @@ td {
 		
 			<table class="results">
 				<tr height="24">
+					<th width="20%" class="risk-1"><a
+						id="10021"></a>
+						<div>Low</div></th>
+					<th class="risk-1">X-Content-Type-Options Header Missing</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The Anti-MIME-Sniffing header X-Content-Type-Options was not set to &#39;nosniff&#39;. This allows older versions of Internet Explorer and Chrome to perform MIME-sniffing on the response body, potentially causing the response body to be interpreted and displayed as a content type other than the declared content type. Current (early 2014) and legacy versions of Firefox will use the declared content type (if one is set), rather than performing MIME-sniffing.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtag/js?id=AW-617640813">https://www.googletagmanager.com/gtag/js?id=AW-617640813</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-Content-Type-Options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X">https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-Content-Type-Options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://sdk.split.io/api/mySegments/660">https://sdk.split.io/api/mySegments/660</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">OPTIONS</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-Content-Type-Options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://sdk.split.io/api/mySegments/DUMMY_KEY">https://sdk.split.io/api/mySegments/DUMMY_KEY</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">OPTIONS</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%">X-Content-Type-Options</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">4</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure that the application/web server sets the Content-Type header appropriately, and that it sets the X-Content-Type-Options header to &#39;nosniff&#39; for all web pages.</div>
+							<br />
+						
+							<div>If possible, ensure that the end user uses a standards-compliant and modern web browser that does not perform MIME-sniffing at all, or that can be directed by the web application/web server to not perform MIME-sniffing.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a>
+							<br />
+						
+							<a href="https://owasp.org/www-community/Security_Headers">https://owasp.org/www-community/Security_Headers</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">15</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10021/">10021</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="10019"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Content-Type Header Missing</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The Content-Type header was either missing or empty.</div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://sdk.split.io/api/mySegments/660">https://sdk.split.io/api/mySegments/660</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">OPTIONS</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://sdk.split.io/api/mySegments/DUMMY_KEY">https://sdk.split.io/api/mySegments/DUMMY_KEY</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">OPTIONS</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%"></td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">2</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Ensure each page is setting the specific and appropriate content-type value for the content being delivered.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx">http://msdn.microsoft.com/en-us/library/ie/gg622941%28v=vs.85%29.aspx</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"><a
+						href="https://cwe.mitre.org/data/definitions/345.html">345</a></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%">12</td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10019/">10019</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
 					<th width="20%" class="risk-0"><a
 						id="10027"></a>
 						<div>Informational</div></th>
@@ -895,6 +1291,32 @@ td {
 					<tr>
 						<td width="20%"
 							class="indent1">URL</td>
+						<td width="80%"><a href="https://app-cdn.clickup.com/libs_localization_utils_src_lib_ecodes_index_ts.5309d7ecee89a8.js">https://app-cdn.clickup.com/libs_localization_utils_src_lib_ecodes_index_ts.5309d7ecee89a8.js</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">query</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
 						<td width="80%"><a href="https://app-cdn.clickup.com/polyfills.ce9fc6f7f5e3d3.js">https://app-cdn.clickup.com/polyfills.ce9fc6f7f5e3d3.js</a></td>
 					</tr>
 					<tr>
@@ -944,9 +1366,191 @@ td {
 						<td width="80%">select</td>
 					</tr>
 				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtag/js?id=AW-617640813">https://www.googletagmanager.com/gtag/js?id=AW-617640813</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Db</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtag/js?id=AW-617640813">https://www.googletagmanager.com/gtag/js?id=AW-617640813</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">from</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtag/js?id=AW-617640813">https://www.googletagmanager.com/gtag/js?id=AW-617640813</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">query</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtag/js?id=AW-617640813">https://www.googletagmanager.com/gtag/js?id=AW-617640813</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">select</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X">https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">Db</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X">https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">from</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X">https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">GET</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">QUERY</td>
+					</tr>
+				
 				<tr>
 					<td width="20%">Instances</td>
-					<td width="80%">4</td>
+					<td width="80%">12</td>
 				</tr>
 				<tr>
 					<td width="20%">Solution</td>
@@ -1132,6 +1736,128 @@ td {
 					<td width="20%">Plugin Id</td>
 					<td width="80%"><a
 						href="https://www.zaproxy.org/docs/alerts/10015/">10015</a></td>
+				</tr>
+			</table>
+			<div class="spacer"></div>
+		
+			<table class="results">
+				<tr height="24">
+					<th width="20%" class="risk-0"><a
+						id="10050"></a>
+						<div>Informational</div></th>
+					<th class="risk-0">Retrieved from Cache</th>
+				</tr>
+				<tr>
+					<td width="20%">Description</td>
+					<td width="80%">
+							<div>The content was retrieved from a shared cache. If the response data is sensitive, personal or user-specific, this may result in sensitive information being leaked. In some cases, this may even result in a user gaining complete control of the session of another user, depending on the configuration of the caching components in use in their environment. This is primarily an issue where caching servers such as &quot;proxy&quot; caches are configured on the local network. This configuration is typically found in corporate or educational environments, for instance. </div>
+							
+						</td>
+				</tr>
+				<TR vAlign="top">
+					<TD colspan="2"></TD>
+				</TR>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://sdk.split.io/api/mySegments/660">https://sdk.split.io/api/mySegments/660</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">OPTIONS</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">HIT</td>
+					</tr>
+				
+					<tr>
+						<td width="20%"
+							class="indent1">URL</td>
+						<td width="80%"><a href="https://sdk.split.io/api/mySegments/DUMMY_KEY">https://sdk.split.io/api/mySegments/DUMMY_KEY</a></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Method</td>
+						<td width="80%">OPTIONS</td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Parameter</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Attack</td>
+						<td width="80%"></td>
+					</tr>
+					<tr>
+						<td width="20%"
+							class="indent2">Evidence</td>
+						<td width="80%">HIT</td>
+					</tr>
+				
+				<tr>
+					<td width="20%">Instances</td>
+					<td width="80%">2</td>
+				</tr>
+				<tr>
+					<td width="20%">Solution</td>
+					<td width="80%">
+							<div>Validate that the response does not contain sensitive, personal or user-specific information.  If it does, consider the use of the following HTTP response headers, to limit, or prevent the content being stored and retrieved from the cache by another user:</div>
+							<br />
+						
+							<div>Cache-Control: no-cache, no-store, must-revalidate, private</div>
+							<br />
+						
+							<div>Pragma: no-cache</div>
+							<br />
+						
+							<div>Expires: 0</div>
+							<br />
+						
+							<div>This configuration directs both HTTP 1.0 and HTTP 1.1 compliant caching servers to not store the response, and to not retrieve the response (without validation) from the cache, in response to a similar request.</div>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">Reference</td>
+					<td width="80%">
+							<a href="https://tools.ietf.org/html/rfc7234">https://tools.ietf.org/html/rfc7234</a>
+							<br />
+						
+							<a href="https://tools.ietf.org/html/rfc7231">https://tools.ietf.org/html/rfc7231</a>
+							<br />
+						
+							<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)">http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html (obsoleted by rfc7234)</a>
+							
+						</td>
+				</tr>
+				<tr>
+					<td width="20%">CWE Id</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">WASC Id</td>
+					<td width="80%"></td>
+				</tr>
+				<tr>
+					<td width="20%">Plugin Id</td>
+					<td width="80%"><a
+						href="https://www.zaproxy.org/docs/alerts/10050/">10050</a></td>
 				</tr>
 			</table>
 			<div class="spacer"></div>

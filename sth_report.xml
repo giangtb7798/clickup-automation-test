@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<OWASPZAPReport programName="OWASP ZAP" version="2.12.0" generated="Mon, 17 Apr 2023 11:26:25">
+<OWASPZAPReport programName="OWASP ZAP" version="2.12.0" generated="Tue, 18 Apr 2023 02:57:55">
 	
 		<site name="https://cnv.event.prod.bidr.io" host="cnv.event.prod.bidr.io" port="443" ssl="true">
 			<alerts>
@@ -22,6 +22,13 @@
 		</site>
 	
 	
+		<site name="https://accounts.google.com" host="accounts.google.com" port="443" ssl="true">
+			<alerts>
+				
+			</alerts>
+		</site>
+	
+	
 		<site name="https://fonts.gstatic.com" host="fonts.gstatic.com" port="443" ssl="true">
 			<alerts>
 				
@@ -29,7 +36,7 @@
 		</site>
 	
 	
-		<site name="https://accounts.google.com" host="accounts.google.com" port="443" ssl="true">
+		<site name="https://www.google-analytics.com" host="www.google-analytics.com" port="443" ssl="true">
 			<alerts>
 				
 			</alerts>
@@ -50,7 +57,7 @@
 		</site>
 	
 	
-		<site name="https://www.google-analytics.com" host="www.google-analytics.com" port="443" ssl="true">
+		<site name="https://googleads.g.doubleclick.net" host="googleads.g.doubleclick.net" port="443" ssl="true">
 			<alerts>
 				
 			</alerts>
@@ -58,13 +65,6 @@
 	
 	
 		<site name="https://www.google.com" host="www.google.com" port="443" ssl="true">
-			<alerts>
-				
-			</alerts>
-		</site>
-	
-	
-		<site name="https://googleads.g.doubleclick.net" host="googleads.g.doubleclick.net" port="443" ssl="true">
 			<alerts>
 				
 			</alerts>
@@ -88,12 +88,196 @@
 		<site name="https://www.googletagmanager.com" host="www.googletagmanager.com" port="443" ssl="true">
 			<alerts>
 				
+					<alertitem>
+						<pluginid>10098</pluginid>
+						<alertRef>10098</alertRef>
+						<alert>Cross-Domain Misconfiguration</alert>
+						<name>Cross-Domain Misconfiguration</name>
+						<riskcode>2</riskcode>
+						<confidence>2</confidence>
+						<riskdesc>Medium (Medium)</riskdesc>
+						<confidencedesc>Medium</confidencedesc>
+						<desc>&lt;p&gt;Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server&lt;/p&gt;</desc>
+						<instances>
+							
+								<instance>
+									<uri>https://www.googletagmanager.com/gtag/js?id=AW-617640813</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>Access-Control-Allow-Origin: *</evidence>
+									<otherinfo>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://www.googletagmanager.com/gtm.js?id=GTM-KPP2P6X</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>Access-Control-Allow-Origin: *</evidence>
+									<otherinfo>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</otherinfo>
+								</instance>
+							
+						</instances>
+						<count>2</count>
+						<solution>&lt;p&gt;Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).&lt;/p&gt;&lt;p&gt;Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.&lt;/p&gt;</solution>
+						<otherinfo>&lt;p&gt;The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.&lt;/p&gt;</otherinfo>
+						<reference>&lt;p&gt;https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy&lt;/p&gt;</reference>
+						<cweid>264</cweid>
+						<wascid>14</wascid>
+						<sourceid>20</sourceid>
+					</alertitem>
+				
 			</alerts>
 		</site>
 	
 	
 		<site name="https://app-cdn.clickup.com" host="app-cdn.clickup.com" port="443" ssl="true">
 			<alerts>
+				
+					<alertitem>
+						<pluginid>10036</pluginid>
+						<alertRef>10036</alertRef>
+						<alert>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</alert>
+						<name>Server Leaks Version Information via &quot;Server&quot; HTTP Response Header Field</name>
+						<riskcode>1</riskcode>
+						<confidence>3</confidence>
+						<riskdesc>Low (High)</riskdesc>
+						<confidencedesc>High</confidencedesc>
+						<desc>&lt;p&gt;The web/application server is leaking version information via the &quot;Server&quot; HTTP response header. Access to such information may facilitate attackers identifying other vulnerabilities your web/application server is subject to.&lt;/p&gt;</desc>
+						<instances>
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/default-node_modules_pnpm_formatjs_ecma402-abstract_1_9_8_node_modules_formatjs_ecma402-abstr-6ec257.97ec5c2a1d21cb.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>AmazonS3</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/default-node_modules_pnpm_formatjs_intl-displaynames_5_2_3_node_modules_formatjs_intl-display-54e27a.b5a45c4c5adbb2.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>AmazonS3</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/intl-displaynames.e9fa0b3bd6a2b5.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>AmazonS3</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/polyfills.ce9fc6f7f5e3d3.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>AmazonS3</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/runtime.947b4b6140968f.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>AmazonS3</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/scripts.3a194f6ee71d1b.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>AmazonS3</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+						</instances>
+						<count>6</count>
+						<solution>&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is configured to suppress the &quot;Server&quot; header or provide generic details.&lt;/p&gt;</solution>
+						<otherinfo></otherinfo>
+						<reference>&lt;p&gt;http://httpd.apache.org/docs/current/mod/core.html#servertokens&lt;/p&gt;&lt;p&gt;http://msdn.microsoft.com/en-us/library/ff648552.aspx#ht_urlscan_007&lt;/p&gt;&lt;p&gt;http://blogs.msdn.com/b/varunm/archive/2013/04/23/remove-unwanted-http-response-headers.aspx&lt;/p&gt;&lt;p&gt;http://www.troyhunt.com/2012/02/shhh-dont-let-your-response-headers.html&lt;/p&gt;</reference>
+						<cweid>200</cweid>
+						<wascid>13</wascid>
+						<sourceid>19</sourceid>
+					</alertitem>
+				
+				
+					<alertitem>
+						<pluginid>10027</pluginid>
+						<alertRef>10027</alertRef>
+						<alert>Information Disclosure - Suspicious Comments</alert>
+						<name>Information Disclosure - Suspicious Comments</name>
+						<riskcode>0</riskcode>
+						<confidence>1</confidence>
+						<riskdesc>Informational (Low)</riskdesc>
+						<confidencedesc>Low</confidencedesc>
+						<desc>&lt;p&gt;The response appears to contain suspicious comments which may help an attacker. Note: Matches made within script blocks or files are against the entire content not only comments.&lt;/p&gt;</desc>
+						<instances>
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/default-node_modules_pnpm_formatjs_ecma402-abstract_1_9_8_node_modules_formatjs_ecma402-abstr-6ec257.97ec5c2a1d21cb.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>select</evidence>
+									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;&quot;use strict&quot;;(self.webpackChunkclient=self.webpackChunkclient||[]).push([[&quot;default-node_modules_pnpm_formatjs_ecma402-abstract_1&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/default-node_modules_pnpm_formatjs_intl-displaynames_5_2_3_node_modules_formatjs_intl-display-54e27a.b5a45c4c5adbb2.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>bug</evidence>
+									<otherinfo>The following pattern was used: \bBUG\b and was detected in the element starting with: &quot;(self.webpackChunkclient=self.webpackChunkclient||[]).push([[&quot;default-node_modules_pnpm_formatjs_intl-displaynames_5_2_3_node_mo&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/polyfills.ce9fc6f7f5e3d3.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>select</evidence>
+									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;(self.webpackChunkclient=self.webpackChunkclient||[]).push([[&quot;polyfills&quot;,&quot;default-node_modules_pnpm_angular_localize_14_2_8_mgms&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://app-cdn.clickup.com/scripts.3a194f6ee71d1b.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>select</evidence>
+									<otherinfo>The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;function areCookiesEnabled(){try{if(window.self!==window.top)return!0}catch(c){return!0}try{document.cookie=&quot;cookietest=1&quot;;var l&quot;, see evidence field for the suspicious comment/snippet.</otherinfo>
+								</instance>
+							
+						</instances>
+						<count>4</count>
+						<solution>&lt;p&gt;Remove all comments that return information that may help an attacker and fix any underlying problems they refer to.&lt;/p&gt;</solution>
+						<otherinfo>&lt;p&gt;The following pattern was used: \bSELECT\b and was detected in the element starting with: &quot;&quot;use strict&quot;;(self.webpackChunkclient=self.webpackChunkclient||[]).push([[&quot;default-node_modules_pnpm_formatjs_ecma402-abstract_1&quot;, see evidence field for the suspicious comment/snippet.&lt;/p&gt;</otherinfo>
+						<reference></reference>
+						<cweid>200</cweid>
+						<wascid>13</wascid>
+						<sourceid>19</sourceid>
+					</alertitem>
 				
 			</alerts>
 		</site>
@@ -139,6 +323,70 @@ The directive(s): form-action are among the directives that do not fallback to d
 				
 					<alertitem>
 						<pluginid>10055</pluginid>
+						<alertRef>10055-7</alertRef>
+						<alert>CSP: script-src unsafe-hashes</alert>
+						<name>CSP: script-src unsafe-hashes</name>
+						<riskcode>2</riskcode>
+						<confidence>3</confidence>
+						<riskdesc>Medium (High)</riskdesc>
+						<confidencedesc>High</confidencedesc>
+						<desc>&lt;p&gt;Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page &#x2014; covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.&lt;/p&gt;</desc>
+						<instances>
+							
+								<instance>
+									<uri>https://app.clickup.com/</uri>
+									<method>GET</method>
+									<param>Content-Security-Policy</param>
+									<attack></attack>
+									<evidence>default-src &apos;self&apos; https://app-cdn.clickup.com; script-src &apos;self&apos; blob: https://apis.google.com https://js.live.net https://app.box.com https://www.dropbox.com https://maps.googleapis.com https://cdn1.codox.io https://cdn1.stage.codox.io https://cdn2.stage.codox.io https://cdn.jsdelivr.net https://cdn.firstpromoter.com https://calendly.com https://miro.com https://platform.harvestapp.com https://*.wistia.com https://*.wistia.net https://src.litix.io https://zapier.com https://cdn.zapier.com https://ct.capterra.com https://cdn.servicebell.com https://*.clarity.ms https://www.googletagmanager.com https://www.googleadservices.com https://www.google-analytics.com https://ssl.google-analytics.com https://hat.thepointyspritesclub.com https://www.redditstatic.com https://googleads.g.doubleclick.net https://core.thepointyspritesclub.com https://m.servedby-buysellads.com https://canny.io https://snap.licdn.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://x.clearbitjs.com https://s.pinimg.com https://sdk.minervaknows.com https://sdk-services.minervaknows.com https://pendo-io-static.storage.googleapis.com https://cdn.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://data.pendo.io https://app.pendo.io https://content.webproduct.clickup.com https://data.webproduct.clickup.com &apos;sha256-4F3AlVDfHOAh+oYhZPs3EVMNLNadjO8On0Dw7KGh/0k=&apos; &apos;sha256-HlaGGq5nhTgcEEAWmEiWF8Bdf6qDczq6wsXFnlEg7Tg=&apos; https://cdn.pdst.fm &apos;sha256-j2ps3etSlArdF3rx5RB3P1LHnZ5QaPvxPl1kLybUU1I=&apos; todesktop-internal: https://code.highcharts.com &apos;unsafe-hashes&apos; &apos;sha256-rRMdkshZyJlCmDX27XnL7g3zXaxv7ei6Sg+yt4R3svU=&apos; &apos;sha256-46mc3H6z56gnOReRHr//8M7FxjqtSaDN7KetqqduuiE=&apos; &apos;sha256-lo7ZdP6kFds+wf1WMWvn7MhcFVFJV44kAXODRevzRZ8=&apos; &apos;sha256-kjwZ9XFHUXkRgP39E+c2Nq0vJmP8LXFE0uBk6CONyps=&apos; &apos;sha256-lYEr2zHO9mOSeyRaGwAV3ONrKh8W0bkmiI1dNP3XPw8=&apos; &apos;sha256-LMJv8ESlfiCF+9pWKUez+VXyvZdYrT+fcQ3Eps4XPyQ=&apos; &apos;sha256-O9aq+7SwZvvc0fhedjnYucjU23ErSZyDH2NlMpTcIrg=&apos; &apos;sha256-crv0swrwxjIlHW1jNIPi6B6rE2DSmtsXQFN5PQKnM28=&apos; &apos;sha256-18PfGZ5/htE/jRivbwelUdaz5nHCggm6Z4DwoAxuuuQ=&apos; &apos;sha256-ZdDTEfl8xrGn7iZ/2mMDizDIe6JRmep2vz9STHJi4Zs=&apos; &apos;sha256-XmUonDD4SHX/8KL3j/86z0J1usvsHZ1xoxcYIkK9ofY=&apos; &apos;sha256-TMQYQm5DIUPhkboCV7JZ+UNcKeh2iHk2kDZ+GzVnZyM=&apos; &apos;sha256-rv9RoPCujGN0BWUcqLIueZC4J98NAoFBaa2VQHSBLUA=&apos; &apos;sha256-MhQnurjVkR0d3jTJlT4vDS8W1Ul2ufyOI9GbZmyONCc=&apos; &apos;sha256-fkL1dWflM/Pp1A6PqNJzVUuQZHXkpviRNjFFgUWDc0o=&apos; &apos;sha256-JrwHtCkAMCxphN8OUZ/8B2IOHBF0GxYQVm/u8lnHk5U=&apos; &apos;sha256-aPtbM89KJ2QtT9b3cTayhhL6B9UAtlXVAIrISmkAqlo=&apos; &apos;sha256-dplqP925cq1wFUU0QEM3ErDaKHbkInjAYRqinz3ckA4=&apos; &apos;sha256-+WyYVdw/xyJMSon2S4rJiuvQwzfxnaOVyO9fBWnBdfI=&apos; &apos;sha256-d53GrCUkhYjY5Gg+lvPu4EvwVHF469YN3xDuBKJ1zlw=&apos; &apos;sha256-6YVBj8Dp8/hmBCVa1GkZq10MnLp4jxNZ7DlQg/1e9do=&apos; &apos;sha256-c46qGWZpjsaDTejjs2vXcwKULa5GqfWHy6NpfRj7RLo=&apos; &apos;sha256-NAVhSZ+FJwaLOVUVF5pNJJHxUVkbWK5v3gCC+rhwqUE=&apos; &apos;sha256-9/0hd96qoXdEcT1/9WrK3RBCF0b9iAcQILT7kCdqymI=&apos; &apos;sha256-8NDdvKWDYv66kjW9fgz/ZKScITpkp4dbsM+TA/O04RM=&apos; &apos;sha256-d9X+lt79bIweOwRmtIJ8+D3H5ccnoQF34RXSUTL6hvY=&apos; &apos;sha256-tfwk6Z/5gbYQErJTx0xXYv88nf2sOTB9ziGzTRM780I=&apos; &apos;sha256-r0zKdIaVXL5La22Qv6w3BFOUx0ZioSsqoP8AOEdGty0=&apos; &apos;sha256-4Hq8ngOaih5AFi/QwY8sfU4scUQ7UWGxcITuIl1h45Y=&apos; &apos;sha256-G574QxiyzjYg5WRPE1EIV7ybIvR8RSwSodlLw3OSsSo=&apos; &apos;sha256-62dGtgZECu/Vf7xGnq6kk2x9UEFtACjjvxdPXV22Y1I=&apos; &apos;sha256-A1G2PMl7phK8KZzsPIbRZuxaapDp859I6mcj40iW1Vo=&apos; &apos;sha256-J3lp2ucUq+OQgBYI0rDj0IUEuz0buuDTaQjYGjNVQgU=&apos; &apos;sha256-HsDuP/JOW1/mYiKGwTIYa1MLC/2ccZaJNF8oxxGPr+I=&apos; https://*.singular.com https://*.singular.net https://datadoghq.com https://tpc.googlesyndication.com https://*.walkme.com https://cdn.segment.com https://*.taboola.com https://*.pointmediatracker.com https://*.marketo.net https://*.facebook.net https://*.tiktok.com https://*.ada.support https://app-cdn.clickup.com; style-src &apos;self&apos; &apos;unsafe-inline&apos; https://cdn1.codox.io https://cdn.zapier.com https://app.pendo.io https://cdn.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://content.webproduct.clickup.com blob: https://fast.wistia.com https://fonts.googleapis.com https://*.walkme.com https://*.servicebell.com https://app-cdn.clickup.com; img-src &apos;self&apos; data: https: http: https://www.google.com https://unpkg.com https://q.quora.com https://alb.reddit.com https://www.google-analytics.com https://www.google.co.uk https://www.googletagmanager.com https://core.thepointyspritesclub.com https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://*.clarity.ms https://insight.adsrvr.org blob: https://*.servicebell.com https://www.facebook.com https://zapier-images.imgix.net https://zapier.com https://cdn.pendo.io https://app.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://data.pendo.io https://data.webproduct.clickup.com https://content.webproduct.clickup.com https://tracking.g2crowd.com https://*.giphy.com https://maps.gstatic.com https://maps.googleapis.com https://*.googleapis.com https://*.ggpht.com https://*.githubusercontent.com https://secure.gravatar.com https://www.linkedin.com https://*.walkme.com https://s3.walkmeusercontent.com https://d3sbxpiag177w8.cloudfront.net https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://app-cdn.clickup.com; font-src &apos;self&apos; data: https://*.servicebell.com https://*.wistia.com https://fonts.gstatic.com https://fonts.googleapis.com https://*.walkme.com https://app-cdn.clickup.com; form-action &apos;self&apos; https: https://canny.io https://connect.facebook.net; media-src &apos;self&apos; https://*.servicebell.com https://*.getservicebell.com blob: data: https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://app-cdn.clickup.com; connect-src &apos;self&apos; https://api.exchangeratesapi.io https://maps.googleapis.com https://*.clarity.ms https://sdk.split.io https://events.split.io wss://proxy.clickup.codox.io wss://sm-dsm.stage.codox.io https://alb.clickup.codox.io https://sentry.io https://*.servicebell.com wss://api.servicebell.com https://browser-http-intake.logs.datadoghq.com https://*.browser-intake-datadoghq.com https://payments.sandbox.braintree-api.com https://origin-analytics-sand.sandbox.braintree-api.com https://api.allorigins.win https://www.google-analytics.com https://core.thepointyspritesclub.com https://stats.g.doubleclick.net https://canny.io https://www.facebook.com https://sdk.minervaknows.com https://api.minervaknows.com https://api.zapier.com https://zapier.com https://x.clearbit.com https://app.pendo.io https://data.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://us-central1-adaptive-growth.cloudfunctions.net https://api.giphy.com https://*.litix.io https://*.wistia.com https://embedwistia-a.akamaihd.net https://*.walkme.com wss://search.clickup-qa.com wss://search.clickup-staging.com wss://search.clickup-prod.com wss://search.clickup-eu.com https://*.pointmediatracker.com https://*.marketo.net https://*.facebook.net https://*.tiktok.com http://localhost:23435 http://localhost:39214 http://127.0.0.1:23435 http://127.0.0.1:39214 https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://invoices.clickup.com https://export.clickup.com https://gantt-export-prod.clickup.com wss://*.clickup.com wss://cu-prod-or-coeditor.clickup.com wss://ws.clickup.com wss://na001-ws.clickup.com wss://eu001-ws.clickup.com wss://ap001-ws.clickup.com wss://sa001-ws.clickup.com https://attch.clickup.com https://form-submit.clickup.com blob: https://apis.google.com https://js.live.net https://app.box.com https://www.dropbox.com https://cdn1.codox.io https://cdn1.stage.codox.io https://cdn2.stage.codox.io https://cdn.jsdelivr.net https://cdn.firstpromoter.com https://calendly.com https://miro.com https://platform.harvestapp.com https://*.wistia.net https://src.litix.io https://cdn.zapier.com https://ct.capterra.com https://cdn.servicebell.com https://www.googletagmanager.com https://www.googleadservices.com https://ssl.google-analytics.com https://hat.thepointyspritesclub.com https://www.redditstatic.com https://googleads.g.doubleclick.net https://m.servedby-buysellads.com https://snap.licdn.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://x.clearbitjs.com https://s.pinimg.com https://sdk-services.minervaknows.com https://pendo-io-static.storage.googleapis.com https://cdn.pendo.io https://content.webproduct.clickup.com https://data.webproduct.clickup.com https://cdn.pdst.fm todesktop-internal: https://code.highcharts.com https://*.singular.com https://*.singular.net https://datadoghq.com https://tpc.googlesyndication.com https://cdn.segment.com https://*.taboola.com https://*.ada.support https://app-cdn.clickup.com https://fast.wistia.com https://fonts.googleapis.com https: https://unpkg.com https://q.quora.com https://alb.reddit.com https://www.google.co.uk https://insight.adsrvr.org https://zapier-images.imgix.net https://tracking.g2crowd.com https://*.giphy.com https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com https://*.githubusercontent.com https://secure.gravatar.com https://www.linkedin.com https://s3.walkmeusercontent.com https://d3sbxpiag177w8.cloudfront.net https://fonts.gstatic.com https://*.getservicebell.com; child-src &apos;self&apos; blob: https://www.youtube.com https://player.vimeo.com https://fast.wistia.net https://www.facebook.com https://staticxx.facebook.com https://sdk-services.minervaknows.com https://*.walkme.com; frame-src https:; prefetch-src &apos;self&apos; https://app-cdn.clickup.com; manifest-src &apos;self&apos; https://app-cdn.clickup.com; object-src &apos;none&apos;; report-uri /v1/csp/report-violation; frame-ancestors &apos;self&apos;</evidence>
+									<otherinfo>script-src includes unsafe-hashes, an attacker will be able to use any of the code covered by such hashes.</otherinfo>
+								</instance>
+							
+						</instances>
+						<count>1</count>
+						<solution>&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.&lt;/p&gt;</solution>
+						<otherinfo>&lt;p&gt;script-src includes unsafe-hashes, an attacker will be able to use any of the code covered by such hashes.&lt;/p&gt;</otherinfo>
+						<reference>&lt;p&gt;https://www.w3.org/TR/CSP3/#unsafe-hashes-usage&lt;/p&gt;&lt;p&gt;https://content-security-policy.com/examples/allow-inline-script/&lt;/p&gt;</reference>
+						<cweid>693</cweid>
+						<wascid>15</wascid>
+						<sourceid>1</sourceid>
+					</alertitem>
+				
+				
+					<alertitem>
+						<pluginid>10055</pluginid>
+						<alertRef>10055-6</alertRef>
+						<alert>CSP: style-src unsafe-inline</alert>
+						<name>CSP: style-src unsafe-inline</name>
+						<riskcode>2</riskcode>
+						<confidence>3</confidence>
+						<riskdesc>Medium (High)</riskdesc>
+						<confidencedesc>High</confidencedesc>
+						<desc>&lt;p&gt;Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks. Including (but not limited to) Cross Site Scripting (XSS), and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page &#x2014; covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.&lt;/p&gt;</desc>
+						<instances>
+							
+								<instance>
+									<uri>https://app.clickup.com/</uri>
+									<method>GET</method>
+									<param>Content-Security-Policy</param>
+									<attack></attack>
+									<evidence>default-src &apos;self&apos; https://app-cdn.clickup.com; script-src &apos;self&apos; blob: https://apis.google.com https://js.live.net https://app.box.com https://www.dropbox.com https://maps.googleapis.com https://cdn1.codox.io https://cdn1.stage.codox.io https://cdn2.stage.codox.io https://cdn.jsdelivr.net https://cdn.firstpromoter.com https://calendly.com https://miro.com https://platform.harvestapp.com https://*.wistia.com https://*.wistia.net https://src.litix.io https://zapier.com https://cdn.zapier.com https://ct.capterra.com https://cdn.servicebell.com https://*.clarity.ms https://www.googletagmanager.com https://www.googleadservices.com https://www.google-analytics.com https://ssl.google-analytics.com https://hat.thepointyspritesclub.com https://www.redditstatic.com https://googleads.g.doubleclick.net https://core.thepointyspritesclub.com https://m.servedby-buysellads.com https://canny.io https://snap.licdn.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://x.clearbitjs.com https://s.pinimg.com https://sdk.minervaknows.com https://sdk-services.minervaknows.com https://pendo-io-static.storage.googleapis.com https://cdn.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://data.pendo.io https://app.pendo.io https://content.webproduct.clickup.com https://data.webproduct.clickup.com &apos;sha256-4F3AlVDfHOAh+oYhZPs3EVMNLNadjO8On0Dw7KGh/0k=&apos; &apos;sha256-HlaGGq5nhTgcEEAWmEiWF8Bdf6qDczq6wsXFnlEg7Tg=&apos; https://cdn.pdst.fm &apos;sha256-j2ps3etSlArdF3rx5RB3P1LHnZ5QaPvxPl1kLybUU1I=&apos; todesktop-internal: https://code.highcharts.com &apos;unsafe-hashes&apos; &apos;sha256-rRMdkshZyJlCmDX27XnL7g3zXaxv7ei6Sg+yt4R3svU=&apos; &apos;sha256-46mc3H6z56gnOReRHr//8M7FxjqtSaDN7KetqqduuiE=&apos; &apos;sha256-lo7ZdP6kFds+wf1WMWvn7MhcFVFJV44kAXODRevzRZ8=&apos; &apos;sha256-kjwZ9XFHUXkRgP39E+c2Nq0vJmP8LXFE0uBk6CONyps=&apos; &apos;sha256-lYEr2zHO9mOSeyRaGwAV3ONrKh8W0bkmiI1dNP3XPw8=&apos; &apos;sha256-LMJv8ESlfiCF+9pWKUez+VXyvZdYrT+fcQ3Eps4XPyQ=&apos; &apos;sha256-O9aq+7SwZvvc0fhedjnYucjU23ErSZyDH2NlMpTcIrg=&apos; &apos;sha256-crv0swrwxjIlHW1jNIPi6B6rE2DSmtsXQFN5PQKnM28=&apos; &apos;sha256-18PfGZ5/htE/jRivbwelUdaz5nHCggm6Z4DwoAxuuuQ=&apos; &apos;sha256-ZdDTEfl8xrGn7iZ/2mMDizDIe6JRmep2vz9STHJi4Zs=&apos; &apos;sha256-XmUonDD4SHX/8KL3j/86z0J1usvsHZ1xoxcYIkK9ofY=&apos; &apos;sha256-TMQYQm5DIUPhkboCV7JZ+UNcKeh2iHk2kDZ+GzVnZyM=&apos; &apos;sha256-rv9RoPCujGN0BWUcqLIueZC4J98NAoFBaa2VQHSBLUA=&apos; &apos;sha256-MhQnurjVkR0d3jTJlT4vDS8W1Ul2ufyOI9GbZmyONCc=&apos; &apos;sha256-fkL1dWflM/Pp1A6PqNJzVUuQZHXkpviRNjFFgUWDc0o=&apos; &apos;sha256-JrwHtCkAMCxphN8OUZ/8B2IOHBF0GxYQVm/u8lnHk5U=&apos; &apos;sha256-aPtbM89KJ2QtT9b3cTayhhL6B9UAtlXVAIrISmkAqlo=&apos; &apos;sha256-dplqP925cq1wFUU0QEM3ErDaKHbkInjAYRqinz3ckA4=&apos; &apos;sha256-+WyYVdw/xyJMSon2S4rJiuvQwzfxnaOVyO9fBWnBdfI=&apos; &apos;sha256-d53GrCUkhYjY5Gg+lvPu4EvwVHF469YN3xDuBKJ1zlw=&apos; &apos;sha256-6YVBj8Dp8/hmBCVa1GkZq10MnLp4jxNZ7DlQg/1e9do=&apos; &apos;sha256-c46qGWZpjsaDTejjs2vXcwKULa5GqfWHy6NpfRj7RLo=&apos; &apos;sha256-NAVhSZ+FJwaLOVUVF5pNJJHxUVkbWK5v3gCC+rhwqUE=&apos; &apos;sha256-9/0hd96qoXdEcT1/9WrK3RBCF0b9iAcQILT7kCdqymI=&apos; &apos;sha256-8NDdvKWDYv66kjW9fgz/ZKScITpkp4dbsM+TA/O04RM=&apos; &apos;sha256-d9X+lt79bIweOwRmtIJ8+D3H5ccnoQF34RXSUTL6hvY=&apos; &apos;sha256-tfwk6Z/5gbYQErJTx0xXYv88nf2sOTB9ziGzTRM780I=&apos; &apos;sha256-r0zKdIaVXL5La22Qv6w3BFOUx0ZioSsqoP8AOEdGty0=&apos; &apos;sha256-4Hq8ngOaih5AFi/QwY8sfU4scUQ7UWGxcITuIl1h45Y=&apos; &apos;sha256-G574QxiyzjYg5WRPE1EIV7ybIvR8RSwSodlLw3OSsSo=&apos; &apos;sha256-62dGtgZECu/Vf7xGnq6kk2x9UEFtACjjvxdPXV22Y1I=&apos; &apos;sha256-A1G2PMl7phK8KZzsPIbRZuxaapDp859I6mcj40iW1Vo=&apos; &apos;sha256-J3lp2ucUq+OQgBYI0rDj0IUEuz0buuDTaQjYGjNVQgU=&apos; &apos;sha256-HsDuP/JOW1/mYiKGwTIYa1MLC/2ccZaJNF8oxxGPr+I=&apos; https://*.singular.com https://*.singular.net https://datadoghq.com https://tpc.googlesyndication.com https://*.walkme.com https://cdn.segment.com https://*.taboola.com https://*.pointmediatracker.com https://*.marketo.net https://*.facebook.net https://*.tiktok.com https://*.ada.support https://app-cdn.clickup.com; style-src &apos;self&apos; &apos;unsafe-inline&apos; https://cdn1.codox.io https://cdn.zapier.com https://app.pendo.io https://cdn.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://content.webproduct.clickup.com blob: https://fast.wistia.com https://fonts.googleapis.com https://*.walkme.com https://*.servicebell.com https://app-cdn.clickup.com; img-src &apos;self&apos; data: https: http: https://www.google.com https://unpkg.com https://q.quora.com https://alb.reddit.com https://www.google-analytics.com https://www.google.co.uk https://www.googletagmanager.com https://core.thepointyspritesclub.com https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://*.clarity.ms https://insight.adsrvr.org blob: https://*.servicebell.com https://www.facebook.com https://zapier-images.imgix.net https://zapier.com https://cdn.pendo.io https://app.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://data.pendo.io https://data.webproduct.clickup.com https://content.webproduct.clickup.com https://tracking.g2crowd.com https://*.giphy.com https://maps.gstatic.com https://maps.googleapis.com https://*.googleapis.com https://*.ggpht.com https://*.githubusercontent.com https://secure.gravatar.com https://www.linkedin.com https://*.walkme.com https://s3.walkmeusercontent.com https://d3sbxpiag177w8.cloudfront.net https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://app-cdn.clickup.com; font-src &apos;self&apos; data: https://*.servicebell.com https://*.wistia.com https://fonts.gstatic.com https://fonts.googleapis.com https://*.walkme.com https://app-cdn.clickup.com; form-action &apos;self&apos; https: https://canny.io https://connect.facebook.net; media-src &apos;self&apos; https://*.servicebell.com https://*.getservicebell.com blob: data: https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://app-cdn.clickup.com; connect-src &apos;self&apos; https://api.exchangeratesapi.io https://maps.googleapis.com https://*.clarity.ms https://sdk.split.io https://events.split.io wss://proxy.clickup.codox.io wss://sm-dsm.stage.codox.io https://alb.clickup.codox.io https://sentry.io https://*.servicebell.com wss://api.servicebell.com https://browser-http-intake.logs.datadoghq.com https://*.browser-intake-datadoghq.com https://payments.sandbox.braintree-api.com https://origin-analytics-sand.sandbox.braintree-api.com https://api.allorigins.win https://www.google-analytics.com https://core.thepointyspritesclub.com https://stats.g.doubleclick.net https://canny.io https://www.facebook.com https://sdk.minervaknows.com https://api.minervaknows.com https://api.zapier.com https://zapier.com https://x.clearbit.com https://app.pendo.io https://data.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://us-central1-adaptive-growth.cloudfunctions.net https://api.giphy.com https://*.litix.io https://*.wistia.com https://embedwistia-a.akamaihd.net https://*.walkme.com wss://search.clickup-qa.com wss://search.clickup-staging.com wss://search.clickup-prod.com wss://search.clickup-eu.com https://*.pointmediatracker.com https://*.marketo.net https://*.facebook.net https://*.tiktok.com http://localhost:23435 http://localhost:39214 http://127.0.0.1:23435 http://127.0.0.1:39214 https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://invoices.clickup.com https://export.clickup.com https://gantt-export-prod.clickup.com wss://*.clickup.com wss://cu-prod-or-coeditor.clickup.com wss://ws.clickup.com wss://na001-ws.clickup.com wss://eu001-ws.clickup.com wss://ap001-ws.clickup.com wss://sa001-ws.clickup.com https://attch.clickup.com https://form-submit.clickup.com blob: https://apis.google.com https://js.live.net https://app.box.com https://www.dropbox.com https://cdn1.codox.io https://cdn1.stage.codox.io https://cdn2.stage.codox.io https://cdn.jsdelivr.net https://cdn.firstpromoter.com https://calendly.com https://miro.com https://platform.harvestapp.com https://*.wistia.net https://src.litix.io https://cdn.zapier.com https://ct.capterra.com https://cdn.servicebell.com https://www.googletagmanager.com https://www.googleadservices.com https://ssl.google-analytics.com https://hat.thepointyspritesclub.com https://www.redditstatic.com https://googleads.g.doubleclick.net https://m.servedby-buysellads.com https://snap.licdn.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://x.clearbitjs.com https://s.pinimg.com https://sdk-services.minervaknows.com https://pendo-io-static.storage.googleapis.com https://cdn.pendo.io https://content.webproduct.clickup.com https://data.webproduct.clickup.com https://cdn.pdst.fm todesktop-internal: https://code.highcharts.com https://*.singular.com https://*.singular.net https://datadoghq.com https://tpc.googlesyndication.com https://cdn.segment.com https://*.taboola.com https://*.ada.support https://app-cdn.clickup.com https://fast.wistia.com https://fonts.googleapis.com https: https://unpkg.com https://q.quora.com https://alb.reddit.com https://www.google.co.uk https://insight.adsrvr.org https://zapier-images.imgix.net https://tracking.g2crowd.com https://*.giphy.com https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com https://*.githubusercontent.com https://secure.gravatar.com https://www.linkedin.com https://s3.walkmeusercontent.com https://d3sbxpiag177w8.cloudfront.net https://fonts.gstatic.com https://*.getservicebell.com; child-src &apos;self&apos; blob: https://www.youtube.com https://player.vimeo.com https://fast.wistia.net https://www.facebook.com https://staticxx.facebook.com https://sdk-services.minervaknows.com https://*.walkme.com; frame-src https:; prefetch-src &apos;self&apos; https://app-cdn.clickup.com; manifest-src &apos;self&apos; https://app-cdn.clickup.com; object-src &apos;none&apos;; report-uri /v1/csp/report-violation; frame-ancestors &apos;self&apos;</evidence>
+									<otherinfo>style-src includes unsafe-inline.</otherinfo>
+								</instance>
+							
+						</instances>
+						<count>1</count>
+						<solution>&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.&lt;/p&gt;</solution>
+						<otherinfo>&lt;p&gt;style-src includes unsafe-inline.&lt;/p&gt;</otherinfo>
+						<reference>&lt;p&gt;http://www.w3.org/TR/CSP2/&lt;/p&gt;&lt;p&gt;http://www.w3.org/TR/CSP/&lt;/p&gt;&lt;p&gt;http://caniuse.com/#search=content+security+policy&lt;/p&gt;&lt;p&gt;http://content-security-policy.com/&lt;/p&gt;&lt;p&gt;https://github.com/shapesecurity/salvation&lt;/p&gt;&lt;p&gt;https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources&lt;/p&gt;</reference>
+						<cweid>693</cweid>
+						<wascid>15</wascid>
+						<sourceid>1</sourceid>
+					</alertitem>
+				
+				
+					<alertitem>
+						<pluginid>10055</pluginid>
 						<alertRef>10055-3</alertRef>
 						<alert>CSP: Notices</alert>
 						<name>CSP: Notices</name>
@@ -154,4 +402,62 @@ The directive(s): form-action are among the directives that do not fallback to d
 									<method>GET</method>
 									<param>Content-Security-Policy</param>
 									<attack></attack>
-									<evidence>default-src &apos;self&apos; https://app-cdn.clickup.com; script-src &apos;self&apos; blob: https://apis.google.com https://js.live.net https://app.box.com https://www.dropbox.com https://maps.googleapis.com https://cdn1.codox.io https://cdn1.stage.codox.io https://cdn2.stage.codox.io https://cdn.jsdelivr.net https://cdn.firstpromoter.com https://calendly.com https://miro.com https://platform.harvestapp.com https://*.wistia.com https://*.wistia.net https://src.litix.io https://zapier.com https://cdn.zapier.com https://ct.capterra.com https://cdn.servicebell.com https://*.clarity.ms https://www.googletagmanager.com https://www.googleadservices.com https://www.google-analytics.com https://ssl.google-analytics.com https://hat.thepointyspritesclub.com https://www.redditstatic.com https://googleads.g.doubleclick.net https://core.thepointyspritesclub.com https://m.servedby-buysellads.com https://canny.io https://snap.licdn.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://x.clearbitjs.com https://s.pinimg.com https://sdk.minervaknows.com https://sdk-services.minervaknows.com https://pendo-io-static.storage.googleapis.com https://cdn.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://data.pendo.io https://app.pendo.io https://content.webproduct.clickup.com https://data.webproduct.clickup.com &apos;sha256-4F3AlVDfHOAh+oYhZPs3EVMNLNadjO8On0Dw7KGh/0k=&apos; &apos;sha256-HlaGGq5nhTgcEEAWmEiWF8Bdf6qDczq6wsXFnlEg7Tg=&apos; https://cdn.pdst.fm &apos;sha256-j2ps3etSlArdF3rx5RB3P1LHnZ5QaPvxPl1kLybUU1I=&apos; todesktop-internal: https://code.highcharts.com &apos;unsafe-hashes&apos; &apos;sha256-rRMdkshZyJlCmDX27XnL7g3zXaxv7ei6Sg+yt4R3svU=&apos; &apos;sha256-46mc3H6z56gnOReRHr//8M7FxjqtSaDN7KetqqduuiE=&apos; &apos;sha256-lo7ZdP6kFds+wf1WMWvn7MhcFVFJV44kAXODRevzRZ8=&apos; &apos;sha256-kjwZ9XFHUXkRgP39E+c2Nq0vJmP8LXFE0uBk6CONyps=&apos; &apos;sha256-lYEr2zHO9mOSeyRaGwAV3ONrKh8W0bkmiI1dNP3XPw8=&apos; &apos;sha256-LMJv8ESlfiCF+9pWKUez+VXyvZdYrT+fcQ3Eps4XPyQ=&apos; &apos;sha256-O9aq+7SwZvvc0fhedjnYucjU23ErSZyDH2NlMpTcIrg=&apos; &apos;sha256-crv0swrwxjIlHW1jNIPi6B6rE2DSmtsXQFN5PQKnM28=&apos; &apos;sha256-18PfGZ5/htE/jRivbwelUdaz5nHCggm6Z4DwoAxuuuQ=&apos; &apos;sha256-ZdDTEfl8xrGn7iZ/2mMDizDIe6JRmep2vz9STHJi4Zs=&apos; &apos;sha256-XmUonDD4SHX/8KL3j/86z0J1usvsHZ1xoxcYIkK9ofY=&apos; &apos;sha256-TMQYQm5DIUPhkboCV7JZ+UNcKeh2iHk2kDZ+GzVnZyM=&apos; &apos;sha256-rv9RoPCujGN0BWUcqLIueZC4J98NAoFBaa2VQHSBLUA=&apos; &apos;sha256-MhQnurjVkR0d3jTJlT4vDS8W1Ul2ufyOI9GbZmyONCc=&apos; &apos;sha256-fkL1dWflM/Pp1A6PqNJzVUuQZHXkpviRNjFFgUWDc0o=&apos; &apos;sha256-JrwHtCkAMCxphN8OUZ/8B2IOHBF0GxYQVm/u8lnHk5U=&apos; &apos;sha256-aPtbM89KJ2QtT9b3cTayhhL6B9UAtlXVAIrISmkAqlo=&apos; &apos;sha256-dplqP925cq1wFUU0QEM3ErDaKHbkInjAYRqinz3ckA4=&apos; &apos;sha256-+WyYVdw/xyJMSon2S4rJiuvQwzfxnaOVyO9fBWnBdfI=&apos; &apos;sha256-d53GrCUkhYjY5Gg+lvPu4EvwVHF469YN3xDuBKJ1zlw=&apos; &apos;sha256-6YVBj8Dp8/hmBCVa1GkZq10MnLp4jxNZ7DlQg/1e9do=&apos; &apos;sha256-c46qGWZpjsaDTejjs2vXcwKULa5GqfWHy6NpfRj7RLo=&apos; &apos;sha256-NAVhSZ+FJwaLOVUVF5pNJJHxUVkbWK5v3gCC+rhwqUE=&apos; &apos;sha256-9/0hd96qoXdEcT1/9WrK3RBCF0b9iAcQILT7kCdqymI=&apos; &apos;sha256-8NDdvKWDYv66kjW9fgz/ZKScITpkp4dbsM+TA/O04RM=&apos; &apos;sha256-d9X+lt79bIweOwRmtIJ8+D3H5ccnoQF34RXSUTL6hvY=&apos; &apos;sha256-tfwk6Z/5gbYQErJTx0xXYv88nf2sOTB9ziGzTRM780I=&apos; &apos;sha256-r0zKdIaVXL5La22Qv6w3BFOUx0ZioSsqoP8AOEdGty0=&apos; &apos;sha256-4Hq8ngOaih5AFi/QwY8sfU4scUQ7UWGxcITuIl1h45Y=&apos; &apos;sha256-G574QxiyzjYg5WRPE1EIV7ybIvR8RSwSodlLw3OSsSo=&apos; &apos;sha256-62dGtgZECu/Vf7xGnq6kk2x9UEFtACjjvxdPXV22Y1I=&apos; &apos;sha256-A1G2PMl7phK8KZzsPIbRZuxaapDp859I6mcj40iW1Vo=&apos; &apos;sha256-J3lp2ucUq+OQgBYI0rDj0IUEuz0buuDTaQjYGjNVQgU=&apos; &apos;sha256-HsDuP/JOW1/mYiKGwTIYa1MLC/2ccZaJNF8oxxGPr+I=&apos; https://*.singular.com https://*.singular.net https://datadoghq.com https://tpc.googlesyndication.com https://*.walkme.com https://cdn.segment.com https://*.taboola.com https://*.pointmediatracker.com https://*.marketo.net https://*.facebook.net https://*.tiktok.com https://*.ada.support https://app-cdn.clickup.com; style-src &apos;self&apos; &apos;unsafe-inline&apos; https://cdn1.codox.io https://cdn.zapier.com https://app.pendo.io https://cdn.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://content.webproduct.clickup.com blob: https://fast.wistia.com https://fonts.googleapis.com https://*.walkme.com https://*.servicebell.com https://app-cdn.clickup.com; img-src &apos;self&apos; data: https: http: https://www.google.com https://unpkg.com https://q.quora.com https://alb.reddit.com https://www.google-analytics.com https://www.google.co.uk https://www.googletagmanager.com https://core.thepointyspritesclub.com https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://*.clarity.ms https://insight.adsrvr.org blob: https://*.servicebell.com https://www.facebook.com https://zapier-images.imgix.net https://zapier.com https://cdn.pendo.io https://app.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://data.pendo.io https://data.webproduct.clickup.com https://content.webproduct.clickup.com https://tracking.g2crowd.com https://*.giphy.com https://maps.gstatic.com https://maps.googleapis.com https://*.googleapis.com https://*.ggpht.com https://*.githubusercontent.com https://secure.gravatar.com https://www.linkedin.com https://*.walkme.com https://s3.walkmeusercontent.com https://d3sbxpiag177w8.cloudfront.net https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://app-cdn.clickup.com; font-src &apos;self&apos; data: https://*.servicebell.com https://*.wistia.com https://fonts.gstatic.com https://fonts.googleapis.com https://*.walkme.com https://app-cdn.clickup.com; form-action &apos;self&apos; https: https://canny.io https://connect.facebook.net; media-src &apos;self&apos; https://*.servicebell.com https://*.getservicebell.com blob: data: https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://app-cdn.clickup.com; connect-src &apos;self&apos; https://api.exchangeratesapi.io https://maps.googleapis.com https://*.clarity.ms https://sdk.split.io https://events.split.io wss://proxy.clickup.codox.io wss://sm-dsm.stage.codox.io https://alb.clickup.codox.io https://sentry.io https://*.servicebell.com wss://api.servicebell.com https://browser-http-intake.logs.datadoghq.com https://*.browser-intake-datadoghq.com https://payments.sandbox.braintree-api.com https://origin-analytics-sand.sandbox.braintree-api.com https://api.allorigins.win https://www.google-analytics.com https://core.thepointyspritesclub.com https://stats.g.doubleclick.net https://canny.io https://www.facebook.com https://sdk.minervaknows.com https://api.minervaknows.com https://api.zapier.com https://zapier.com https://x.clearbit.com https://app.pendo.io https://data.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://us-central1-adaptive-growth.cloudfunctions.net https://api.giphy.com https://*.litix.io https://*.wistia.com https://embedwistia-a.akamaihd.net https://*.walkme.com wss://search.clickup-qa.com wss://search.clickup-staging.com wss://search.clickup-prod.com wss://search.clickup-eu.com https://*.pointmediatracker.com https://*.marketo.net https://*.facebook.net https://*.tiktok.com http://localhost:23435 http://localhost:39214 http://127.0.0.1:23435 http://127.0.0.1:39214 https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://invoices.clickup.com https://export.clickup.com https://gantt-export-prod.clickup.com wss://*.clickup.com wss://cu-prod-or-coeditor.clickup.com wss://ws.clickup.com wss://na001-ws.clickup.com wss://eu001-ws.clickup.com wss://ap001-ws.clickup.com wss://sa001-ws.clickup.com https://attch.clickup.com https
+									<evidence>default-src &apos;self&apos; https://app-cdn.clickup.com; script-src &apos;self&apos; blob: https://apis.google.com https://js.live.net https://app.box.com https://www.dropbox.com https://maps.googleapis.com https://cdn1.codox.io https://cdn1.stage.codox.io https://cdn2.stage.codox.io https://cdn.jsdelivr.net https://cdn.firstpromoter.com https://calendly.com https://miro.com https://platform.harvestapp.com https://*.wistia.com https://*.wistia.net https://src.litix.io https://zapier.com https://cdn.zapier.com https://ct.capterra.com https://cdn.servicebell.com https://*.clarity.ms https://www.googletagmanager.com https://www.googleadservices.com https://www.google-analytics.com https://ssl.google-analytics.com https://hat.thepointyspritesclub.com https://www.redditstatic.com https://googleads.g.doubleclick.net https://core.thepointyspritesclub.com https://m.servedby-buysellads.com https://canny.io https://snap.licdn.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://x.clearbitjs.com https://s.pinimg.com https://sdk.minervaknows.com https://sdk-services.minervaknows.com https://pendo-io-static.storage.googleapis.com https://cdn.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://data.pendo.io https://app.pendo.io https://content.webproduct.clickup.com https://data.webproduct.clickup.com &apos;sha256-4F3AlVDfHOAh+oYhZPs3EVMNLNadjO8On0Dw7KGh/0k=&apos; &apos;sha256-HlaGGq5nhTgcEEAWmEiWF8Bdf6qDczq6wsXFnlEg7Tg=&apos; https://cdn.pdst.fm &apos;sha256-j2ps3etSlArdF3rx5RB3P1LHnZ5QaPvxPl1kLybUU1I=&apos; todesktop-internal: https://code.highcharts.com &apos;unsafe-hashes&apos; &apos;sha256-rRMdkshZyJlCmDX27XnL7g3zXaxv7ei6Sg+yt4R3svU=&apos; &apos;sha256-46mc3H6z56gnOReRHr//8M7FxjqtSaDN7KetqqduuiE=&apos; &apos;sha256-lo7ZdP6kFds+wf1WMWvn7MhcFVFJV44kAXODRevzRZ8=&apos; &apos;sha256-kjwZ9XFHUXkRgP39E+c2Nq0vJmP8LXFE0uBk6CONyps=&apos; &apos;sha256-lYEr2zHO9mOSeyRaGwAV3ONrKh8W0bkmiI1dNP3XPw8=&apos; &apos;sha256-LMJv8ESlfiCF+9pWKUez+VXyvZdYrT+fcQ3Eps4XPyQ=&apos; &apos;sha256-O9aq+7SwZvvc0fhedjnYucjU23ErSZyDH2NlMpTcIrg=&apos; &apos;sha256-crv0swrwxjIlHW1jNIPi6B6rE2DSmtsXQFN5PQKnM28=&apos; &apos;sha256-18PfGZ5/htE/jRivbwelUdaz5nHCggm6Z4DwoAxuuuQ=&apos; &apos;sha256-ZdDTEfl8xrGn7iZ/2mMDizDIe6JRmep2vz9STHJi4Zs=&apos; &apos;sha256-XmUonDD4SHX/8KL3j/86z0J1usvsHZ1xoxcYIkK9ofY=&apos; &apos;sha256-TMQYQm5DIUPhkboCV7JZ+UNcKeh2iHk2kDZ+GzVnZyM=&apos; &apos;sha256-rv9RoPCujGN0BWUcqLIueZC4J98NAoFBaa2VQHSBLUA=&apos; &apos;sha256-MhQnurjVkR0d3jTJlT4vDS8W1Ul2ufyOI9GbZmyONCc=&apos; &apos;sha256-fkL1dWflM/Pp1A6PqNJzVUuQZHXkpviRNjFFgUWDc0o=&apos; &apos;sha256-JrwHtCkAMCxphN8OUZ/8B2IOHBF0GxYQVm/u8lnHk5U=&apos; &apos;sha256-aPtbM89KJ2QtT9b3cTayhhL6B9UAtlXVAIrISmkAqlo=&apos; &apos;sha256-dplqP925cq1wFUU0QEM3ErDaKHbkInjAYRqinz3ckA4=&apos; &apos;sha256-+WyYVdw/xyJMSon2S4rJiuvQwzfxnaOVyO9fBWnBdfI=&apos; &apos;sha256-d53GrCUkhYjY5Gg+lvPu4EvwVHF469YN3xDuBKJ1zlw=&apos; &apos;sha256-6YVBj8Dp8/hmBCVa1GkZq10MnLp4jxNZ7DlQg/1e9do=&apos; &apos;sha256-c46qGWZpjsaDTejjs2vXcwKULa5GqfWHy6NpfRj7RLo=&apos; &apos;sha256-NAVhSZ+FJwaLOVUVF5pNJJHxUVkbWK5v3gCC+rhwqUE=&apos; &apos;sha256-9/0hd96qoXdEcT1/9WrK3RBCF0b9iAcQILT7kCdqymI=&apos; &apos;sha256-8NDdvKWDYv66kjW9fgz/ZKScITpkp4dbsM+TA/O04RM=&apos; &apos;sha256-d9X+lt79bIweOwRmtIJ8+D3H5ccnoQF34RXSUTL6hvY=&apos; &apos;sha256-tfwk6Z/5gbYQErJTx0xXYv88nf2sOTB9ziGzTRM780I=&apos; &apos;sha256-r0zKdIaVXL5La22Qv6w3BFOUx0ZioSsqoP8AOEdGty0=&apos; &apos;sha256-4Hq8ngOaih5AFi/QwY8sfU4scUQ7UWGxcITuIl1h45Y=&apos; &apos;sha256-G574QxiyzjYg5WRPE1EIV7ybIvR8RSwSodlLw3OSsSo=&apos; &apos;sha256-62dGtgZECu/Vf7xGnq6kk2x9UEFtACjjvxdPXV22Y1I=&apos; &apos;sha256-A1G2PMl7phK8KZzsPIbRZuxaapDp859I6mcj40iW1Vo=&apos; &apos;sha256-J3lp2ucUq+OQgBYI0rDj0IUEuz0buuDTaQjYGjNVQgU=&apos; &apos;sha256-HsDuP/JOW1/mYiKGwTIYa1MLC/2ccZaJNF8oxxGPr+I=&apos; https://*.singular.com https://*.singular.net https://datadoghq.com https://tpc.googlesyndication.com https://*.walkme.com https://cdn.segment.com https://*.taboola.com https://*.pointmediatracker.com https://*.marketo.net https://*.facebook.net https://*.tiktok.com https://*.ada.support https://app-cdn.clickup.com; style-src &apos;self&apos; &apos;unsafe-inline&apos; https://cdn1.codox.io https://cdn.zapier.com https://app.pendo.io https://cdn.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://content.webproduct.clickup.com blob: https://fast.wistia.com https://fonts.googleapis.com https://*.walkme.com https://*.servicebell.com https://app-cdn.clickup.com; img-src &apos;self&apos; data: https: http: https://www.google.com https://unpkg.com https://q.quora.com https://alb.reddit.com https://www.google-analytics.com https://www.google.co.uk https://www.googletagmanager.com https://core.thepointyspritesclub.com https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://*.clarity.ms https://insight.adsrvr.org blob: https://*.servicebell.com https://www.facebook.com https://zapier-images.imgix.net https://zapier.com https://cdn.pendo.io https://app.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://data.pendo.io https://data.webproduct.clickup.com https://content.webproduct.clickup.com https://tracking.g2crowd.com https://*.giphy.com https://maps.gstatic.com https://maps.googleapis.com https://*.googleapis.com https://*.ggpht.com https://*.githubusercontent.com https://secure.gravatar.com https://www.linkedin.com https://*.walkme.com https://s3.walkmeusercontent.com https://d3sbxpiag177w8.cloudfront.net https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://app-cdn.clickup.com; font-src &apos;self&apos; data: https://*.servicebell.com https://*.wistia.com https://fonts.gstatic.com https://fonts.googleapis.com https://*.walkme.com https://app-cdn.clickup.com; form-action &apos;self&apos; https: https://canny.io https://connect.facebook.net; media-src &apos;self&apos; https://*.servicebell.com https://*.getservicebell.com blob: data: https://*.wistia.com https://*.wistia.net https://embedwistia-a.akamaihd.net https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://app-cdn.clickup.com; connect-src &apos;self&apos; https://api.exchangeratesapi.io https://maps.googleapis.com https://*.clarity.ms https://sdk.split.io https://events.split.io wss://proxy.clickup.codox.io wss://sm-dsm.stage.codox.io https://alb.clickup.codox.io https://sentry.io https://*.servicebell.com wss://api.servicebell.com https://browser-http-intake.logs.datadoghq.com https://*.browser-intake-datadoghq.com https://payments.sandbox.braintree-api.com https://origin-analytics-sand.sandbox.braintree-api.com https://api.allorigins.win https://www.google-analytics.com https://core.thepointyspritesclub.com https://stats.g.doubleclick.net https://canny.io https://www.facebook.com https://sdk.minervaknows.com https://api.minervaknows.com https://api.zapier.com https://zapier.com https://x.clearbit.com https://app.pendo.io https://data.pendo.io https://pendo-static-5086206243897344.storage.googleapis.com https://us-central1-adaptive-growth.cloudfunctions.net https://api.giphy.com https://*.litix.io https://*.wistia.com https://embedwistia-a.akamaihd.net https://*.walkme.com wss://search.clickup-qa.com wss://search.clickup-staging.com wss://search.clickup-prod.com wss://search.clickup-eu.com https://*.pointmediatracker.com https://*.marketo.net https://*.facebook.net https://*.tiktok.com http://localhost:23435 http://localhost:39214 http://127.0.0.1:23435 http://127.0.0.1:39214 https://attachments.clickup.com https://attachments2.clickup.com https://*.p.clickup-attachments.com https://*.ps.clickup-attachments.com https://invoices.clickup.com https://export.clickup.com https://gantt-export-prod.clickup.com wss://*.clickup.com wss://cu-prod-or-coeditor.clickup.com wss://ws.clickup.com wss://na001-ws.clickup.com wss://eu001-ws.clickup.com wss://ap001-ws.clickup.com wss://sa001-ws.clickup.com https://attch.clickup.com https://form-submit.clickup.com blob: https://apis.google.com https://js.live.net https://app.box.com https://www.dropbox.com https://cdn1.codox.io https://cdn1.stage.codox.io https://cdn2.stage.codox.io https://cdn.jsdelivr.net https://cdn.firstpromoter.com https://calendly.com https://miro.com https://platform.harvestapp.com https://*.wistia.net https://src.litix.io https://cdn.zapier.com https://ct.capterra.com https://cdn.servicebell.com https://www.googletagmanager.com https://www.googleadservices.com https://ssl.google-analytics.com https://hat.thepointyspritesclub.com https://www.redditstatic.com https://googleads.g.doubleclick.net https://m.servedby-buysellads.com https://snap.licdn.com https://www.google.com https://www.gstatic.com https://connect.facebook.net https://x.clearbitjs.com https://s.pinimg.com https://sdk-services.minervaknows.com https://pendo-io-static.storage.googleapis.com https://cdn.pendo.io https://content.webproduct.clickup.com https://data.webproduct.clickup.com https://cdn.pdst.fm todesktop-internal: https://code.highcharts.com https://*.singular.com https://*.singular.net https://datadoghq.com https://tpc.googlesyndication.com https://cdn.segment.com https://*.taboola.com https://*.ada.support https://app-cdn.clickup.com https://fast.wistia.com https://fonts.googleapis.com https: https://unpkg.com https://q.quora.com https://alb.reddit.com https://www.google.co.uk https://insight.adsrvr.org https://zapier-images.imgix.net https://tracking.g2crowd.com https://*.giphy.com https://maps.gstatic.com https://*.googleapis.com https://*.ggpht.com https://*.githubusercontent.com https://secure.gravatar.com https://www.linkedin.com https://s3.walkmeusercontent.com https://d3sbxpiag177w8.cloudfront.net https://fonts.gstatic.com https://*.getservicebell.com; child-src &apos;self&apos; blob: https://www.youtube.com https://player.vimeo.com https://fast.wistia.net https://www.facebook.com https://staticxx.facebook.com https://sdk-services.minervaknows.com https://*.walkme.com; frame-src https:; prefetch-src &apos;self&apos; https://app-cdn.clickup.com; manifest-src &apos;self&apos; https://app-cdn.clickup.com; object-src &apos;none&apos;; report-uri /v1/csp/report-violation; frame-ancestors &apos;self&apos;</evidence>
+									<otherinfo>Warnings:
+The report-uri directive has been deprecated in favor of the new report-to directive
+</otherinfo>
+								</instance>
+							
+						</instances>
+						<count>1</count>
+						<solution>&lt;p&gt;Ensure that your web server, application server, load balancer, etc. is properly configured to set the Content-Security-Policy header.&lt;/p&gt;</solution>
+						<otherinfo>&lt;p&gt;Warnings:&lt;/p&gt;&lt;p&gt;The report-uri directive has been deprecated in favor of the new report-to directive&lt;/p&gt;&lt;p&gt;&lt;/p&gt;</otherinfo>
+						<reference>&lt;p&gt;http://www.w3.org/TR/CSP2/&lt;/p&gt;&lt;p&gt;http://www.w3.org/TR/CSP/&lt;/p&gt;&lt;p&gt;http://caniuse.com/#search=content+security+policy&lt;/p&gt;&lt;p&gt;http://content-security-policy.com/&lt;/p&gt;&lt;p&gt;https://github.com/shapesecurity/salvation&lt;/p&gt;&lt;p&gt;https://developers.google.com/web/fundamentals/security/csp#policy_applies_to_a_wide_variety_of_resources&lt;/p&gt;</reference>
+						<cweid>693</cweid>
+						<wascid>15</wascid>
+						<sourceid>1</sourceid>
+					</alertitem>
+				
+				
+					<alertitem>
+						<pluginid>10109</pluginid>
+						<alertRef>10109</alertRef>
+						<alert>Modern Web Application</alert>
+						<name>Modern Web Application</name>
+						<riskcode>0</riskcode>
+						<confidence>2</confidence>
+						<riskdesc>Informational (Medium)</riskdesc>
+						<confidencedesc>Medium</confidencedesc>
+						<desc>&lt;p&gt;The application appears to be a modern web application. If you need to explore it automatically then the Ajax Spider may well be more effective than the standard one.&lt;/p&gt;</desc>
+						<instances>
+							
+								<instance>
+									<uri>https://app.clickup.com/</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence>&lt;noscript&gt;&lt;iframe src=&quot;https://www.googletagmanager.com/ns.html?id=GTM-KPP2P6X&quot; height=&quot;0&quot; width=&quot;0&quot; style=&quot;display:none;visibility:hidden&quot;&gt;&lt;/iframe&gt;&lt;/noscript&gt;</evidence>
+									<otherinfo>A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not.</otherinfo>
+								</instance>
+							
+						</instances>
+						<count>1</count>
+						<solution>&lt;p&gt;This is an informational alert and so no changes are required.&lt;/p&gt;</solution>
+						<otherinfo>&lt;p&gt;A noScript tag has been found, which is an indication that the application works differently with JavaScript enabled compared to when it is not.&lt;/p&gt;</otherinfo>
+						<reference></reference>
+						<cweid>-1</cweid>
+						<wascid>-1</wascid>
+						<sourceid>1</sourceid>
+					</alertitem>
+				
+				
+					<alertitem>
+						<pluginid>10015</pluginid>
+						<alertRef>10015</alertRef>
+						<alert>Re-examine Cache-control Directives</alert>
+						<name>Re-examine Cache-control Directives</name>
+						<riskcode>0</riskcode>
+						<confidence>1</confidence>
+						<riskdesc>Informational (Low)</riskdesc>
+						<confidencedesc>Low</confidencedesc>
+						<desc>&lt;p&gt;The cache-cont
