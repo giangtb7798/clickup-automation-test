@@ -28,12 +28,24 @@ public class ZapTest extends AbstractWebTest {
     @Test(description = "before login", groups = {"before_login"})
     public void before_login() throws ClientApiException, InterruptedException, IOException {
         ClientApi api;
+        Proxy proxy = new Proxy();
+        proxy.setHttpProxy("localhost:8080");
+        proxy.setSslProxy("localhost:8080");
+
+        //Setup the web browser
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setAcceptInsecureCerts(true);
+        chromeOptions.addArguments(new String[]{"headless"});
+        chromeOptions.setProxy(proxy);
+        WebDriver driver = new ChromeDriver(chromeOptions);
 
         api = new ClientApi("localhost", 8080);
         api.automation.endDelayJob();
-
         //Open the URL
         driver.get("https://app.clickup.com/");
+
+        sleep(5000);
 
         Path path = Paths.get("security-reports");
         Files.createDirectories(path);
@@ -43,14 +55,30 @@ public class ZapTest extends AbstractWebTest {
         fw.write(new String(api.core.htmlreport()));
         fw.close();
 
+        //Quit the browser
+        driver.quit();
+
     }
-    @Test(description = "After login", groups = {"after_login"})
+    @Test(description = "after login", groups = {"after_login"})
     public void after_login() throws ClientApiException, InterruptedException, IOException {
-        ClientApi api;
         String mail = "ntruonggiangtb98@gmail.com";
         String password = "07071998Gg";
 
+        ClientApi api;
+        Proxy proxy = new Proxy();
+        proxy.setHttpProxy("localhost:8080");
+        proxy.setSslProxy("localhost:8080");
+
+        //Setup the web browser
+        WebDriverManager.chromedriver().setup();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.setAcceptInsecureCerts(true);
+        chromeOptions.addArguments(new String[]{"headless"});
+        chromeOptions.setProxy(proxy);
+        WebDriver driver = new ChromeDriver(chromeOptions);
+
         api = new ClientApi("localhost", 8080);
+        api.automation.endDelayJob();
 
         //Open the URL
         driver.get("https://app.clickup.com/");
@@ -61,10 +89,7 @@ public class ZapTest extends AbstractWebTest {
         driver.findElement(By.xpath("//button[@data-test=\"login-submit\"]")).click();
         WebElement firstResult = new WebDriverWait(driver, 60l)
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'Home')]")));
-        //scan
-        api.automation.endDelayJob();
 
-        //report
         Path path = Paths.get("security-reports");
         Files.createDirectories(path);
         FileWriter fw = new FileWriter(new File("security-reports/" + "sth" + "_report.xml"));
@@ -72,6 +97,9 @@ public class ZapTest extends AbstractWebTest {
         fw = new FileWriter(new File("security-reports/" + "index.html"));
         fw.write(new String(api.core.htmlreport()));
         fw.close();
+
+        //Quit the browser
+        driver.quit();
 
     }
 }

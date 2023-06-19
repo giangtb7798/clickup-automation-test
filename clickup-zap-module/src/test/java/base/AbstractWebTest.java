@@ -15,9 +15,10 @@ import java.io.IOException;
 public class AbstractWebTest {
     public WebDriver driver;
     public WebElement element;
+    public ClientApi api;
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod() throws IOException {
-        ClientApi api;
+
         Proxy proxy = new Proxy();
         proxy.setHttpProxy("localhost:8080");
         proxy.setSslProxy("localhost:8080");
@@ -33,7 +34,7 @@ public class AbstractWebTest {
     }
     @AfterMethod(alwaysRun = true)
     public void afterMethod() throws IOException {
-        //driver.close();
+        driver.close();
     }
 
 
