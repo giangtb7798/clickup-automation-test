@@ -30,7 +30,8 @@ public class ZapTest extends AbstractWebTest {
         ClientApi api;
 
         api = new ClientApi("localhost", 8080);
-        api.automation.endDelayJob();
+        //scan
+        api.spider.scans();
 
         //Open the URL
         driver.get("https://app.clickup.com/");
@@ -62,8 +63,7 @@ public class ZapTest extends AbstractWebTest {
         WebElement firstResult = new WebDriverWait(driver, 60l)
                 .until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'Home')]")));
         //scan
-        api.automation.endDelayJob();
-
+        api.spider.scans();
         //report
         Path path = Paths.get("security-reports");
         Files.createDirectories(path);
