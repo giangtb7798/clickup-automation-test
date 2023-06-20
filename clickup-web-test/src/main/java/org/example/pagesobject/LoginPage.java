@@ -18,6 +18,8 @@ public class LoginPage extends WebApi {
 
     @FindBy(xpath = "//button[@data-test=\"login-submit\"]")
     private WebElement loginSubmitButton;
+    @FindBy(xpath = "//button[@aria-label=\"Close\"]")
+    private WebElement closePopUpBtn;
 
     private String txtWarningEmail = "//span[contains(text(),'%s')]";
 
@@ -42,6 +44,12 @@ public class LoginPage extends WebApi {
     @Step("Click to submit button")
     public LoginPage clickToSubmitBtn(){
         clickToElement(loginSubmitButton);
+        clickToClosePopUp();
+        return this;
+    }
+    @Step("Click to close popup")
+    public LoginPage clickToClosePopUp(){
+        clickToElement(closePopUpBtn);
         return this;
     }
     @Step("verify warning email displayed")

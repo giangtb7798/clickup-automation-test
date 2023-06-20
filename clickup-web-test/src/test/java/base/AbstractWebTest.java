@@ -25,7 +25,7 @@ public class AbstractWebTest {
 
     @BeforeSuite(alwaysRun = true)
     @Parameters("browser")
-    public void beforeSuite(@Optional("hchrome") String browser) {
+    public void beforeSuite(@Optional("chrome") String browser) {
         System.setProperty("webBrowser.browser", browser);
     }
 
