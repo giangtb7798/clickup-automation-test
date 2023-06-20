@@ -27,6 +27,21 @@ public class FolderTests extends BaseTest {
                 .validateResponse(HttpURLConnection.HTTP_OK);
 
     }
+    @Test(description = "verify that delete folder successfully", groups={"folder"})
+    public void delete_folder_successfully_2() throws Exception {
+        String name = "study";
+        FolderInput folderInput = new FolderInput(name);
+        FolderResponse folderResponse = (FolderResponse) folderSteps
+                .when_createFolder(folderInput)
+                .validateResponse(HttpURLConnection.HTTP_OK)
+                .saveResponseObject(FolderResponse.class);
+
+        //delete data
+        folderSteps
+                .when_deleteFolder(folderResponse.getId())
+                .validateResponse(HttpURLConnection.HTTP_OK);
+
+    }
     @Test(description = "get folder successfully")
     public void get_folder_successfully() throws Exception {
         String name = "study";
