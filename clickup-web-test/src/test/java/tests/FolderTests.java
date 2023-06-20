@@ -73,7 +73,6 @@ public class FolderTests extends AbstractWebTest {
                 .enterFolderName(folderName)
                 .clickToCreateFolderBtn()
                 //verify folder created successfully
-                .clickToSpace(name)
                 .verifyFolderNameDisplayedAndLinkedToSpace(folderName);
     }
     @Test(description = "verify create list in folder works")
