@@ -15,7 +15,7 @@ import java.net.HttpURLConnection;
 @Feature("api-list")
 public class ListTests extends BaseTest {
 
-    @Test(description = "verify that create list successfully")
+    @Test(description = "verify that create list successfully updated")
     public void create_list_successfully() throws Exception {
         String name = "nameList";
         FolderInput folderInput = new FolderInput(name);
@@ -23,7 +23,6 @@ public class ListTests extends BaseTest {
                 .when_createListInFolder(folderInput)
                 .validateResponse(HttpURLConnection.HTTP_OK)
                 .saveResponseObject(FolderResponse.class);
-
         // name = "";
         name = "";
         folderInput = new FolderInput(name);
